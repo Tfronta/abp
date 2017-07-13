@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+import ABPUtils
+
+import argparse
+
+ap = argparse.ArgumentParser(description="Summarize the number of neighbors of a source that are shared with neighbors of dest")
+ap.add_argument("--out", help="Output file.", default="/dev/stdout")
+args = ap.parse_args()

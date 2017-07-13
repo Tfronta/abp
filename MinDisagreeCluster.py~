@@ -1,0 +1,313 @@
+#!/usr/bin/env python
+
+
+import argparse
+import networkx as nx
+import ABPUtils
+import itertools
+import numpy as np
+import pdb
+from sets import Set
+import copy
+import random
+from multiprocess import Pool
+import operator
+
+ap = argparse.ArgumentParser(description="Heuristic for min-disagree clustering")
+ap.add_argument("--graph", help="Graph file.", required=True)
+ap.add_argument("--radius", help="Radius for repulsion", type=int, default=1000)
+ap.add_argument("--out", help="Output graph.")
+ap.add_argument("--niter", help="Number of clustering iterations.", type=int,default=10)
+args = ap.parse_args()
+
+
+g = ABPUtils.ReadGraph(args.graph)
+
+
+sites = [ (int(g.node[n]['pos']), n) for n in g.node]
+sites = sorted(sites)
+
+i = 0
+nRepulsion = 0
+nOK = 0
+pos = {i:g.node[i]['pos'] for i in g.nodes()}
+
+def StoreRepulsionAdjacency(g, n, pos, radius):
+    repulsion = Set()
+    for i in g.nodes():
+        dist = abs(pos[i] - pos[n])
+        if dist < radius and i not in g[n]:
+            if i != n:
+                repulsion.update([i])
+    return repulsion
+
+def StoreRepulsion(g, radius):
+    pos = {i:g.node[i]['pos'] for i in g.nodes()}
+    return { i: StoreRepulsionAdjacency(g,i,pos,radius) for i in g.nodes() }
+
+def NeighborSimilarity(g,src,dest):
+    srcNeighbors  = sorted(g[src].keys())
+    destNeighbors = sorted(g[dest].keys())
+    nShared = len(np.intersect1d(srcNeighbors, destNeighbors, assume_unique=True))
+    return nShared
+
+def GetCost(g, i, j, r, m):
+    if j in g[i]:
+        return 1
+    else:
+        if j in m[i]:
+            return -1
+        else:
+            return 0
+    
+allNodeSet = Set(g.nodes())
+
+
+
+def CountRepulsion(cut, nodes, repulsion):
+    n=0
+    for node in nodes:
+        n+= len(repulsion[node].intersection(cut))
+    return n
+
+
+def CountNeighborsInSets(gadj, srcSet, inclSets):
+    inside = 0
+    outside = 0
+    for src in srcSet:
+        for dest in gadj[src]:
+            foundDest = False
+            for inclSet in inclSets:
+                if dest in inclSet:
+                    foundDest = True
+                    inside +=1
+                    break
+            if foundDest == False:
+                outside+=1
+            
+    return (inside,outside)
+
+def CountEdgesBetween(gadj, a,b):
+    #
+    # return the number of edges between nodes in a and b
+    #
+    if len(a) < len(b):
+        smallerCut = a
+        largerCut = b
+    else:
+        smallerCut = b
+        largerCut = a
+
+    n=0
+    for src in smallerCut:
+        for dest in gadj[src]:
+            if dest in largerCut:
+                n+=1
+    return n
+        
+
+def ScoreCut(gadj, cut, repulsion):
+    #
+    # Count repulsion edges inside the cut.
+    #
+    nNeg = CountRepulsion(cut, cut, repulsion)
+
+    #
+    # Count edges from the cut to other nodes.
+    #
+    outer = allNodeSet.difference(cut)
+    nPos = CountEdgesBetween(gadj, cut, outer)
+#    print "scoring cut: " + str(nNeg) + "\t" + str(nPos)
+    return nNeg + nPos
+
+def Neighboring(g, subgraph, n):
+    neighbors = Set(sorted(g[n].keys()))
+    return list(neighbors.difference(subgraph))
+
+def GrowSubgraph(g, subgraph, neighbors, n):
+    subgraph.update(n)
+    for i in n:
+        neighbors.update(g[i].keys())
+    neighbors.difference_update(subgraph)
+    neighbors.difference_update(n)
+
+
+def GetAdjacent(gadj, subgraph, exclude=None):
+    adjacent = Set()
+    for n in subgraph:
+        #
+        # Possibly faster method to check for neighbors.
+        #
+        adjacent.update(gadj[n])
+
+    if exclude is not None:
+        adjacent.difference_update(exclude)
+
+    # Make sure adjacent is not self referencing
+    adjacent.difference_update(subgraph)
+    return adjacent
+
+def CountUnion(a,b):
+    if (len(a) < len(b)):
+        smaller = a
+        larger = b
+    else:
+        smaller = b
+        larger = a
+    n = 0
+    for i in smaller:
+        if i in larger:
+            n+=1
+    return n
+
+
+def ScoreCutExpansion(g, gadj, cut, expansion, repulsion):
+
+    #
+    # Thrifty method to compute new score of cut when nodes from
+    # expansion are added to cut.
+    #
+    
+    neighborsOutsideCut = GetAdjacent(gadj, expansion, exclude=cut)
+    numEdgesCrossingCut = 0
+    for expNode in expansion:
+        for dest in gadj[expNode]:
+            if dest in neighborsOutsideCut:
+                numEdgesCrossingCut +=1
+
+    
+    numEdgesInExpansion = CountEdgesBetween(gadj,expansion,expansion)
+
+    # 
+    # 'black' edges that were previously from the cut to the
+    # expansion.  The score will decrease by this.
+    #
+
+    numEdgesBetweenExpansionAndCut    = CountEdgesBetween(gadj,cut,expansion)
+
+    
+    #
+    # 'red' edges that were outside the cut but are now inside.
+    #
+    numNewIncludedRepulsion = CountRepulsion(cut, expansion, repulsion)
+#    print "Score cut expansion exp-tot {}\texp-repl {}\texp-cut {}\texp-exp{}".format(numEdgesCrossingCut , numNewIncludedRepulsion ,  2*numEdgesBetweenExpansionAndCut , numEdgesInExpansion)
+
+    return numEdgesCrossingCut + numNewIncludedRepulsion - numEdgesBetweenExpansionAndCut - numEdgesInExpansion
+
+def IsolatedCutScore(gadj, testCut):
+    n=0
+    for node in testCut:
+        for dest in gadj[node]:
+            if dest > node:
+                n+=1
+    return n
+
+
+def GrowCut(g, cut, repulsion):
+    neighbors = GetAdjacent(g, cut)
+    grewCut = True
+    iter = 0
+    nodes = g.nodes()
+    adjList = g.adjacency_list()
+    gadj = { nodes[i]: adjList[i] for i in range(0,len(nodes)) }
+    it = 0
+
+#    ipdb.set_trace()
+    while grewCut:
+        grewCut = False
+        nSearched = 0
+        searched = []
+        shuffledNeighbors = list(neighbors)
+        random.shuffle(shuffledNeighbors)
+        curScore = ScoreCut(g, cut, repulsion)
+        newCutScore = 0
+        iter +=1
+        for n in shuffledNeighbors:
+            testCut = copy.deepcopy(cut) # O(n)
+            # 
+            # Define the nodes that will be expanded
+            #
+            expandedCut = Set([n]+ g[n].keys()) #O(n)
+            
+            #
+            # When the expansion is a search, e.g. Set([n]+ gadj[n]), remove overlap with current cut
+            #
+            expandedCut.difference_update(cut) # O(n)
+        
+            # 
+            # Test cut is current cut plus neighbors
+            #
+            testCut.update(expandedCut)
+
+            #
+            # Find the cost of all of the neighbors in what will be expanded.
+            #
+            isolatedTestCutScore =  ScoreCut(gadj, expandedCut, repulsion)
+
+            #
+            # Try and come up with a thrifty method to compute expansion.
+            #
+#            cutExpansion = ScoreCutExpansion(g, gadj, cut, expandedCut, repulsion)
+
+            
+            #
+            # Get the score of the entire new test cut.  Ideally this is equal to the cut expansion
+            #
+            newCutScore = ScoreCut(gadj, testCut, repulsion) 
+
+            #
+            # The benefit of adding this cut is equal to the new test cut minus
+            # all the nodes in isolation. I'm not sure if this is a good thing --
+            # maybe the cost of the cut should be equal to the assumption that 
+            # all other nodes are in the same cut.
+            #
+            newCutScoreDiff = newCutScore - isolatedTestCutScore
+
+            it+=1
+#            print "cut scores: " + str(newCutScore) + "\t" + str(isolatedTestCutScore) + "\t" + str(curScore)
+            if  newCutScore - isolatedTestCutScore < curScore:
+                GrowSubgraph(g, cut, neighbors, expandedCut)
+                grewCut = True
+                break
+            nSearched+=1
+            searched.append(str(n))
+        print "New cut: " + str(iter) + "\t" + str(len(cut)) + "\t" + str(curScore) + "\t" + str(newCutScore) + "\t" + str(nSearched) 
+        
+    return cut
+
+class Input:
+    def __init__(self,g,it,repulsion):
+        self.g = g
+        self.it = it
+        self.repulsion = repulsion
+
+
+
+
+def SampleCuts(g, nIter, repulsion):
+    clustered = Set([])
+    cuts = []
+    subgraph = g.copy()
+    while (len(clustered) < len(g.nodes())):
+        print "iter: " + str(it) + "\t" + str(len(cuts[-1])) + "\t" + str(len(clustered)) + "/" + str(len(g.nodes()))
+        unclustered = list(Set(g.nodes()).difference(clustered))
+        seed = unclustered[random.randint(0,len(unclustered)-1)]
+        cut = Set([seed])
+        GrowCut(g, cut, repulsion)
+        clustered.update(cut)
+        cuts[-1].append(cut)
+        subgraph.remove_nodes_from(list(cut))
+
+    return cuts
+        
+def SampleCutsIt(cl):
+    return SampleCuts(cl.g, cl.it, cl.repulsion)
+
+radius=20000
+
+
+gadjl = g.adjacency_list()
+nodes = g.nodes()
+gadj = { nodes[i]: Set(gadjl[i]) for i in range(0,len(nodes)) }
+repulsion = StoreRepulsion(g, args.radius)
+

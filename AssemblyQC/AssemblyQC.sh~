@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# usage AssemblyQC.sh directory reads.fasta assembly.fasta
+#source ~/scripts/setup_abp
+
+pushd $1
+assembly=assembly.consensus.fasta
+if [ ! -s $assembly ]; then
+		assembly=assembly.quiver-only.fasta
+fi
+
+if [ ! -s $assembly ]; then
+		exit 0
+fi
+
+base=$(dirname $0)
+
+$base/../blasr/alignment/bin/blasr group.2.fasta $assembly -sam -bestn 1 -out /dev/stdout -nproc 2 | samtools view -bS - | samtools sort -T tmp -o reads.bam
+samtools index reads.bam
+
+$base/../abp/BamToSNVTable.sh reads.bam $assembly
+
+samtools depth reads.bam > reads.depth
+
+$base/WriteQCSummary.py $assembly assembly.consensus.nucfreq.vcf reads.depth 1000 30 $1 > summary.txt

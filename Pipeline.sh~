@@ -1,0 +1,86 @@
+#!/usr/bin/env bash
+
+source ~/scripts/setup_abp
+#source config.sh
+
+MINCOV=30
+MAXCOV=50
+# only consider collapsed sites
+MINTOTAL=100
+
+while [[ $# -gt 1 ]]; do
+		key="$1"
+		case $key in
+				-n|--minCov)
+						MINCOV="$2"
+						shift
+						;;
+			  -m|--maxCov)
+						MAXCOV="$2"
+						shift
+						;;
+				-h)
+						echo "Usage: CreateBrowserShots.sh gaps.bed aln_dir dest_dir "
+						echo "  -n, --minCov val Minimal read count for an alternate allele to be considered a PSV."
+						echo "  -x, --maxCov val Maximal read count for an alternate allele to be considered a PSV."
+						exit 1						
+						;;
+				*)
+						;;
+		esac
+		shift
+		
+done
+base=$(dirname $0)
+
+if [ ! -e reads.bam ]; then
+		samtools view -h reads.orig.bam | $base/blasr/pbihdfutils/bin/samtobas /dev/stdin reads.bas.h5
+		$base/bin/blasr reads.bas.h5 ref.fasta -sam  -mismatch 3 -insertion 9 -deletion 9 -nproc 4 -out /dev/stdout -minMapQV 30 -minAlignLength 2000 -preserveReadTitle | samtools view -bS - | samtools sort -T tmp -o reads.bam
+		samtools index reads.bam
+fi
+
+#
+# Create the .fragments file
+#
+echo "$base/BamToSNVTable.sh reads.bam ref.fasta $MINCOV"
+$base/BamToSNVTable.sh reads.bam ref.fasta $MINCOV $MINTOTAL
+
+
+$base/FragmentSNVListToMatrix.py assembly.consensus.fragments.snv --named --pos assembly.consensus.fragments.snv.pos --mat assembly.consensus.fragments.snv.mat  
+
+#
+# Set up the ground truth if it exists
+#
+if [ -f duplications.fasta ]; then
+		samtools view reads.bam | awk '{ print ">"$1; print $10;}' > reads.fasta
+		$base/alignment/bin/blasr reads.fasta duplications.fasta -m 4 -bestn 1 -preserveReadTitle -out reads.dups.m4 -nproc 4
+ 		$base/sorting/OrderMatByAlignments.py assembly.consensus.fragments.snv.mat reads.dups.m4  > assembly.consensus.fragments.snv.mat.categorized
+else 
+		cat assembly.consensus.fragments.snv.mat | awk '{ print $1"\t"$2"\tall"}' > assembly.consensus.fragments.snv.mat.categorized
+fi
+
+
+$base/PairedSNVs.py assembly.consensus.fragments.snv.mat.categorized  --minCov $MINCOV --maxCov $MAXCOV  --graph mi.gml --adj mi.adj --minNShared 5 --minLRT 1.5 --vcf assembly.consensus.nucfreq.vcf
+
+$base/MinDisagreeCluster.py --graph mi.gml --cuts mi.gml.cuts --sites mi.gml.sites --factor 2 --out mi.cuts.gml --swap 1000 --plot mi.gml.png --out mi.cuts.gml 
+
+samtools faidx ref.fasta
+
+$base/CutsToPhasedVCF.py mi.gml.cuts assembly.consensus.fragments.snv.pos assembly.consensus.nucfreq.vcf --minComponent 4 --summary mi.comps.txt  --ref ref.fasta.fai
+
+for vcf in `ls group*.vcf`; do
+		g=${vcf%.*}
+		mkdir -p $g
+		n=`echo $vcf | cut -d. -f 2`
+		$base/PartitionReads.sh $vcf $g/group 2;
+		pushd $g
+		$base/AssembleRegion.sh group.2.sam
+		popd
+done
+
+
+
+ls group.*/assembly.quiver.fasta ref/assembly.quiver.fasta > assemblies.fofn
+
+~/projects/AssemblyByPhasing/scripts/utils/RenameAssemblies.py assemblies.fofn assemblies.fasta
+

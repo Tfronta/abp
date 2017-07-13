@@ -1,0 +1,1 @@
+/net/eichler/vol5/home/mchaisso/projects/PacBioSequencing/scripts/Phasing/BamToSNVTable.sh
