@@ -1,0 +1,685 @@
+bin/BuildSequenceDB.o: BuildSequenceDB.cpp \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/utils/FileOfFileNames.h \
+ ../common/utils/../utils.h ../common/utils.h
+bin/CheckForFilteredReads.o: CheckForFilteredReads.cpp \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/utils.h
+bin/Compress.o: Compress.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/SeqUtils.h ../common/utils.h \
+ ../common/qvs/QualityValue.h ../common/qvs/../defs.h \
+ ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/utils.h
+bin/ConcatenateReads.o: ConcatenateReads.cpp ../common/utils.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h
+bin/ConcatenateSequences.o: ConcatenateSequences.cpp \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/NucConversion.h ../common/utils.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/FileUtils.h
+bin/Condense.o: Condense.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/SeqUtils.h ../common/utils.h \
+ ../common/utils.h
+bin/CountUniqueNMers.o: CountUniqueNMers.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h
+bin/Dustoff.o: Dustoff.cpp ../common/utils.h
+bin/Evolve.o: Evolve.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/statistics/statutils.h ../common/utils.h
+bin/ExciseRepeats.o: ExciseRepeats.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/utils.h
+bin/ExtractRepeats.o: ExtractRepeats.cpp \
+ ../common/datastructures/repmask/RepmaskTable.h \
+ ../common/datastructures/repmask/RepmaskRow.h \
+ ../common/datastructures/repmask/../../utils.h ../common/utils.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h
+bin/ExtractSeq.o: ExtractSeq.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/utils.h
+bin/FileGenome.o: FileGenome.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h
+bin/FilterBySubreadAgreement.o: FilterBySubreadAgreement.cpp \
+ ../common/data/hdf/HDFBasReader.h ../common/data/hdf/DatasetCollection.h \
+ ../common/data/hdf/HDFGroup.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/../../utils/MD5Utils.h \
+ ../common/data/hdf/../../utils/../Types.h ../common/data/hdf/HDFData.h \
+ ../common/data/hdf/HDFConfig.h ../common/data/hdf/HDFArray.h \
+ ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/HDFZMWReader.h \
+ ../common/data/hdf/../../datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/HDFScanDataReader.h ../common/data/hdf/PlatformId.h \
+ ../common/Enumerations.h ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFPulseDataFile.h \
+ ../common/datastructures/reads/BaseFile.h \
+ ../common/datastructures/reads/HoleXY.h \
+ ../common/datastructures/reads/PulseBaseCommon.h \
+ ../common/datastructures/reads/ScanData.h ../common/SMRTSequence.h \
+ ../common/FASTQSequence.h ../common/datastructures/reads/RegionTable.h \
+ ../common/utils/VectorUtils.h ../common/utils/ChangeListID.h \
+ ../common/data/hdf/HDFRegionTableReader.h \
+ ../common/data/hdf/../../datastructures/reads/RegionTable.h \
+ ../common/algorithms/alignment/AffineGuidedAlign.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h ../common/Types.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/datastructures/anchoring/MatchPos.h \
+ ../common/datastructures/matrix/Matrix.h ../common/tuples/DNATuple.h \
+ ../common/tuples/TupleList.h ../common/tuples/../Types.h \
+ ../common/tuples/TupleMetrics.h ../common/tuples/TupleMask.h \
+ ../common/tuples/BaseTuple.h ../common/tuples/TupleOperations.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/tuples/TupleList.h \
+ ../common/utils/LogUtils.h ../common/utils/PhredUtils.h \
+ ../common/qvs/QualityValueVector.h ../common/qvs/QualityValue.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/FASTASequence.h ../common/algorithms/alignment/GuidedAlign.h \
+ ../common/algorithms/alignment/SDPAlign.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/sdp/SparseDynamicProgramming.h \
+ ../common/algorithms/alignment/sdp/SDPSet.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/algorithms/alignment/sdp/SDPColumn.h \
+ ../common/algorithms/alignment/sdp/FragmentSort.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/tuples/TupleMatching.h ../common/tuples/DNATuple.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/alignment/GraphPaper.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/IDSScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/utils/FileOfFileNames.h ../common/utils/../utils.h \
+ ../common/utils/RegionUtils.h \
+ ../common/datastructures/reads/ReadInterval.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/data/hdf/HDFRegionTableWriter.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/statistics/statutils.h
+bin/FilterSeq.o: FilterSeq.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/NucConversion.h ../common/utils.h \
+ ../common/utils/StringUtils.h
+bin/Hammer.o: Hammer.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h
+bin/KnownGeneToSequence.o: KnownGeneToSequence.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/utils.h
+bin/MakeBarcodeDatabase.o: MakeBarcodeDatabase.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/utils.h
+bin/MaskSequence.o: MaskSequence.cpp ../common/files/AlignmentReader.h \
+ ../common/files/../algorithms/alignment/AlignmentFormats.h \
+ ../common/files/../FASTASequence.h ../common/files/../Enumerations.h \
+ ../common/files/../DNASequence.h ../common/files/../NucConversion.h \
+ ../common/files/../Types.h \
+ ../common/files/../datastructures/reads/ZMWGroupEntry.h \
+ ../common/files/../data/hdf/PlatformId.h ../common/files/../utils.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/NucConversion.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/../utils/MD5Utils.h \
+ ../common/qvs/../utils/../Types.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/metagenome/FASTATitleDictionary.h \
+ ../common/datastructures/metagenome/../../utils.h \
+ ../common/datastructures/metagenome/../../FASTASequence.h \
+ ../common/datastructures/metagenome/../../Types.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/FASTASequence.h
+bin/NormalizeGCContent.o: NormalizeGCContent.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/statistics/statutils.h ../common/utils.h \
+ ../common/NucConversion.h
+bin/OurMatch.o: OurMatch.cpp \
+ ../common/algorithms/alignment/AffineKBandAlign.h \
+ ../common/algorithms/alignment/../../NucConversion.h \
+ ../common/algorithms/alignment/../../defs.h \
+ ../common/algorithms/alignment/../../datastructures/matrix/FlatMatrix.h \
+ ../common/Types.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/Alignment.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/../../statistics/statutils.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/AlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/XMLAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../formatting/SimpleXMLUtils.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/CompareSequencesAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/IntervalAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/Alignment.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/../utils/MD5Utils.h \
+ ../common/qvs/../utils/../Types.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/algorithms/alignment/printers/../../../FASTQSequence.h \
+ ../common/algorithms/alignment/printers/SummaryAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/FASTASequence.h ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/ScoreMatrices.h ../common/SMRTSequence.h \
+ ../common/FASTQSequence.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/StringUtils.h ../common/FASTASequence.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/SeqUtils.h \
+ ../common/utils.h ../common/tuples/TupleMetrics.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/files/ReaderAgglomerate.h ../common/files/BaseSequenceIO.h \
+ ../common/Enumerations.h ../common/FASTAReader.h ../common/FASTQReader.h \
+ ../common/FASTAReader.h ../common/CCSSequence.h ../common/SMRTSequence.h \
+ ../common/utils/VectorUtils.h ../common/data/hdf/HDFBasReader.h \
+ ../common/data/hdf/DatasetCollection.h ../common/data/hdf/HDFGroup.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/HDFData.h ../common/data/hdf/HDFConfig.h \
+ ../common/data/hdf/HDFArray.h ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/HDFZMWReader.h \
+ ../common/data/hdf/../../datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/HDFScanDataReader.h ../common/data/hdf/PlatformId.h \
+ ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFPulseDataFile.h \
+ ../common/datastructures/reads/BaseFile.h \
+ ../common/datastructures/reads/HoleXY.h \
+ ../common/datastructures/reads/PulseBaseCommon.h \
+ ../common/datastructures/reads/ScanData.h ../common/utils/VectorUtils.h \
+ ../common/utils/ChangeListID.h ../common/data/hdf/HDFCCSReader.h \
+ ../common/data/hdf/HDFBasReader.h \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/datastructures/alignmentset/SAMToSMRTSequence.h \
+ ../common/files/WriterAgglomerate.h ../common/files/../utils.h \
+ ../common/files/../FASTAReader.h ../common/files/../FASTQReader.h \
+ ../common/files/../data/hdf/HDFBasWriter.h \
+ ../common/files/../data/hdf/HDFArray.h \
+ ../common/files/../data/hdf/BufferedHDFArray.h \
+ ../common/files/../data/hdf/HDF2DArray.h \
+ ../common/files/../data/hdf/BufferedHDF2DArray.h \
+ ../common/files/../data/hdf/HDFAtom.h \
+ ../common/files/../data/hdf/HDFFile.h \
+ ../common/files/../data/hdf/DatasetCollection.h \
+ ../common/utils/SMRTReadUtils.h ../common/utils/../FASTQSequence.h \
+ ../common/utils/StringUtils.h \
+ ../common/files/../data/hdf/HDFScanDataWriter.h \
+ ../common/files/../data/hdf/HDFGroup.h \
+ ../common/files/../data/hdf/PlatformId.h \
+ ../common/files/../Enumerations.h ../common/utils/FileOfFileNames.h \
+ ../common/utils/../utils.h
+bin/PrintGCRank.o: PrintGCRank.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h
+bin/PrintHomopolymerCount.o: PrintHomopolymerCount.cpp \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h
+bin/PrintReverseComplements.o: PrintReverseComplements.cpp \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/CommandLineParser.h \
+ ../common/utils/StringUtils.h
+bin/PrintTitleTable.o: PrintTitleTable.cpp \
+ ../common/datastructures/metagenome/TitleTable.h \
+ ../common/datastructures/metagenome/../../utils.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h
+bin/PrintUnalignedSequences.o: PrintUnalignedSequences.cpp \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/utils.h
+bin/PrintUngappedSequenceLengthHistogram.o: \
+ PrintUngappedSequenceLengthHistogram.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/DNASequence.h
+bin/ReverseComplement.o: ReverseComplement.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/utils.h ../common/NucConversion.h
+bin/ScrambleSequenceOrder.o: ScrambleSequenceOrder.cpp \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/statistics/statutils.h
+bin/SelectRandomSubstrings.o: SelectRandomSubstrings.cpp \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/statistics/statutils.h ../common/utils.h
+bin/SimpleShredder.o: SimpleShredder.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTQSequence.h \
+ ../common/qvs/QualityValue.h ../common/qvs/../defs.h \
+ ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/FASTASequence.h ../common/CommandLineParser.h \
+ ../common/utils/StringUtils.h \
+ ../common/algorithms/metagenomics/FindRandomSequence.h \
+ ../common/statistics/statutils.h ../common/utils.h
+bin/SimulateConcatenates.o: SimulateConcatenates.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/statistics/statutils.h
+bin/SplitContigs.o: SplitContigs.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/utils.h
+bin/TileGenome.o: TileGenome.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/utils.h

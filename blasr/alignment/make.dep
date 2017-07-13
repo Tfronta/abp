@@ -1,0 +1,1946 @@
+bin/Blasr.o: Blasr.cpp MappingIPC.h MappingParameters.h \
+ ../common/tuples/TupleMetrics.h ../common/tuples/../Types.h \
+ ../common/tuples/TupleMask.h \
+ ../common/datastructures/anchoring/AnchorParameters.h \
+ ../common/qvs/QualityValue.h ../common/qvs/../defs.h \
+ ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/../utils/MD5Utils.h \
+ ../common/qvs/../utils/../Types.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/QualityValueVector.h ../common/qvs/QualityValue.h \
+ ../common/utils/ProtectedNew.h ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/FASTQSequence.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/algorithms/alignment/AlignmentFormats.h \
+ ../common/algorithms/anchoring/IntervalSearchParameters.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/FASTASequence.h ../common/FASTQSequence.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/TupleMetrics.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/Types.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/NucConversion.h \
+ ../common/tuples/CompressedDNATuple.h ../common/tuples/DNATuple.h \
+ ../common/tuples/../cmpseq/CompressedSequence.h \
+ ../common/files/ReaderAgglomerate.h ../common/files/BaseSequenceIO.h \
+ ../common/Enumerations.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/StringUtils.h ../common/FASTQReader.h \
+ ../common/FASTAReader.h ../common/CCSSequence.h ../common/SMRTSequence.h \
+ ../common/utils/VectorUtils.h ../common/data/hdf/HDFBasReader.h \
+ ../common/data/hdf/DatasetCollection.h ../common/data/hdf/HDFGroup.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/HDFData.h ../common/data/hdf/HDFConfig.h \
+ ../common/data/hdf/HDFArray.h ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/HDFZMWReader.h \
+ ../common/data/hdf/../../datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/HDFScanDataReader.h ../common/data/hdf/PlatformId.h \
+ ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFPulseDataFile.h \
+ ../common/datastructures/reads/BaseFile.h \
+ ../common/datastructures/reads/HoleXY.h \
+ ../common/datastructures/reads/PulseBaseCommon.h \
+ ../common/datastructures/reads/ScanData.h ../common/utils/VectorUtils.h \
+ ../common/utils/ChangeListID.h ../common/data/hdf/HDFCCSReader.h \
+ ../common/data/hdf/HDFBasReader.h \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToSMRTSequence.h \
+ ../common/datastructures/mapping/MappingMetrics.h \
+ ../common/datastructures/tuplelists/TupleCountTable.h \
+ ../common/datastructures/tuplelists/../../tuples/TupleMetrics.h \
+ ../common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/LCPTable.h ../common/defs.h \
+ ../common/tuples/DNATuple.h ../common/tuples/CompressedDNATuple.h \
+ ../common/algorithms/compare/CompareStrings.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/LightweightSuffixArray.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/MultikeyQuicksort.h \
+ ../common/algorithms/sorting/../../NucConversion.h \
+ ../common/algorithms/sorting/../../FASTASequence.h \
+ ../common/algorithms/sorting/../../Types.h \
+ ../common/algorithms/sorting/DifferenceCovers.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ../common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ../common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ../common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ../common/datastructures/suffixarray/../../FASTASequence.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/bwt/BWT.h ../common/datastructures/bwt/Occ.h \
+ ../common/datastructures/bwt/../../DNASequence.h \
+ ../common/datastructures/bwt/../../NucConversion.h \
+ ../common/datastructures/bwt/../../utils.h \
+ ../common/datastructures/bwt/../matrix/Matrix.h \
+ ../common/datastructures/bwt/../matrix/FlatMatrix.h \
+ ../common/datastructures/bwt/Pos.h \
+ ../common/datastructures/bwt/PackedHash.h \
+ ../common/datastructures/bwt/../../Types.h \
+ ../common/datastructures/bwt/../../utils/BitUtils.h \
+ ../common/datastructures/bwt/../../utils/../Types.h \
+ ../common/datastructures/bwt/../../datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/bwt/../../datastructures/sequence/PackedDNASequence.h \
+ ../common/datastructures/bwt/../../datastructures/sequence/../../DNASequence.h \
+ ../common/datastructures/bwt/../../datastructures/sequence/../../NucConversion.h \
+ ../common/datastructures/bwt/../../datastructures/sequence/../../utils/BitUtils.h \
+ ../common/datastructures/bwt/../../FASTASequence.h MappingSemaphores.h \
+ ../common/tuples/HashedTupleList.h ../common/tuples/../DNASequence.h \
+ ../common/algorithms/alignment.h ../common/algorithms/../NucConversion.h \
+ ../common/algorithms/../defs.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentPrinter.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/XMLAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../formatting/SimpleXMLUtils.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/CompareSequencesAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/IntervalAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/printers/../../../FASTQSequence.h \
+ ../common/algorithms/alignment/printers/SummaryAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/../../NucConversion.h \
+ ../common/algorithms/alignment/../../defs.h \
+ ../common/algorithms/alignment/../../datastructures/matrix/FlatMatrix.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/../../statistics/statutils.h \
+ ../common/algorithms/alignment/SDPAlign.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/algorithms/alignment/sdp/SparseDynamicProgramming.h \
+ ../common/algorithms/alignment/sdp/SDPSet.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/algorithms/alignment/sdp/SDPColumn.h \
+ ../common/algorithms/alignment/sdp/FragmentSort.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/tuples/TupleList.h ../common/tuples/TupleMatching.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/alignment/GraphPaper.h \
+ ../common/algorithms/alignment/AffineKBandAlign.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/GuidedAlign.h \
+ ../common/datastructures/anchoring/MatchPos.h \
+ ../common/datastructures/matrix/Matrix.h ../common/utils/LogUtils.h \
+ ../common/utils/PhredUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/algorithms/alignment/AffineGuidedAlign.h \
+ ../common/algorithms/alignment/GuidedAlign.h \
+ ../common/algorithms/alignment/FullQVAlign.h \
+ ../common/algorithms/alignment/../../datastructures/matrix/Matrix.h \
+ ../common/algorithms/alignment/../../FASTQSequence.h \
+ ../common/algorithms/alignment/../../FASTASequence.h \
+ ../common/algorithms/alignment/ExtendAlign.h \
+ ../common/algorithms/alignment/OneGapAlignment.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/StringToScoreMatrix.h \
+ ../common/algorithms/anchoring/LISPValue.h \
+ ../common/algorithms/anchoring/../../datastructures/anchoring/MatchPos.h \
+ ../common/algorithms/anchoring/../../datastructures/tuplelists/TupleCountTable.h \
+ ../common/algorithms/anchoring/ScoreAnchors.h \
+ ../common/algorithms/anchoring/../../tuples/DNATuple.h \
+ ../common/algorithms/anchoring/../../tuples/TupleMetrics.h \
+ ../common/algorithms/anchoring/../../statistics/cdfs.h \
+ ../common/algorithms/anchoring/../../statistics/pdfs.h \
+ ../common/algorithms/anchoring/../../statistics/statutils.h \
+ ../common/algorithms/anchoring/../../statistics/pdfs.h \
+ ../common/algorithms/anchoring/LISPValueWeightor.h \
+ ../common/algorithms/anchoring/LISPValue.h \
+ ../common/algorithms/anchoring/LISSizeWeightor.h \
+ ../common/algorithms/anchoring/../../Types.h \
+ ../common/algorithms/anchoring/LISQValueWeightor.h \
+ ../common/algorithms/anchoring/../../qvs/QualityValue.h \
+ ../common/algorithms/anchoring/../../DNASequence.h \
+ ../common/algorithms/anchoring/../../FASTQSequence.h \
+ ../common/algorithms/anchoring/FindMaxInterval.h \
+ ../common/algorithms/anchoring/GlobalChain.h \
+ ../common/algorithms/anchoring/PrioritySearchTree.h \
+ ../common/algorithms/anchoring/SDPGlobalChain.h \
+ ../common/algorithms/alignment/sdp/SparseDynamicProgramming.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/algorithms/anchoring/BasicEndpoint.h \
+ ../common/algorithms/anchoring/IntervalSearchParameters.h \
+ ../common/datastructures/anchoring/WeightedInterval.h \
+ ../common/datastructures/anchoring/MatchPos.h \
+ ../common/algorithms/anchoring/MapBySuffixArray.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/anchoring/ClusterProbability.h \
+ ../common/algorithms/anchoring/BWTSearch.h \
+ ../common/algorithms/anchoring/../../datastructures/bwt/BWT.h \
+ ../common/algorithms/anchoring/../../FASTASequence.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/datastructures/metagenome/TitleTable.h \
+ ../common/datastructures/metagenome/../../utils.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ../common/datastructures/tuplelists/TupleCountTable.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/mapping/MappingMetrics.h \
+ ../common/datastructures/reads/ReadInterval.h \
+ ../common/utils/FileOfFileNames.h ../common/utils/../utils.h \
+ ../common/utils/RegionUtils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/qvs/QualityTransform.h ../common/files/ReaderAgglomerate.h \
+ ../common/files/CCSIterator.h ../common/files/../CCSSequence.h \
+ ../common/files/FragmentCCSIterator.h ../common/files/CCSIterator.h \
+ ../common/data/hdf/HDFRegionTableReader.h \
+ ../common/data/hdf/../../datastructures/reads/RegionTable.h \
+ ../common/datastructures/bwt/BWT.h \
+ ../common/datastructures/sequence/PackedDNASequence.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/statistics/pdfs.h ../common/statistics/cdfs.h \
+ ../common/statistics/statutils.h \
+ ../common/statistics/LookupAnchorDistribution.h \
+ ../common/statistics/AnchorDistributionTable.h \
+ ../common/algorithms/anchoring/PiecewiseMatch.h
+bin/BuildQualityValueProfile.o: BuildQualityValueProfile.cpp \
+ ../common/data/hdf/HDFBasReader.h ../common/data/hdf/DatasetCollection.h \
+ ../common/data/hdf/HDFGroup.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/../../utils/MD5Utils.h \
+ ../common/data/hdf/../../utils/../Types.h ../common/data/hdf/HDFData.h \
+ ../common/data/hdf/HDFConfig.h ../common/data/hdf/HDFArray.h \
+ ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/HDFZMWReader.h \
+ ../common/data/hdf/../../datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/HDFScanDataReader.h ../common/data/hdf/PlatformId.h \
+ ../common/Enumerations.h ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFPulseDataFile.h \
+ ../common/datastructures/reads/BaseFile.h \
+ ../common/datastructures/reads/HoleXY.h \
+ ../common/datastructures/reads/PulseBaseCommon.h \
+ ../common/datastructures/reads/ScanData.h ../common/SMRTSequence.h \
+ ../common/FASTQSequence.h ../common/datastructures/reads/RegionTable.h \
+ ../common/utils/VectorUtils.h ../common/utils/ChangeListID.h \
+ ../common/datastructures/reads/ReadList.h \
+ ../common/datastructures/reads/../../Types.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/qvs/QualityValueProfile.h ../common/qvs/../tuples/DNATuple.h \
+ ../common/qvs/../tuples/TupleList.h ../common/qvs/../tuples/../Types.h \
+ ../common/qvs/../tuples/TupleMetrics.h \
+ ../common/qvs/../tuples/TupleMask.h ../common/qvs/../tuples/BaseTuple.h \
+ ../common/qvs/../tuples/TupleOperations.h ../common/Types.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/NucConversion.h \
+ ../common/qvs/../tuples/TupleMetrics.h \
+ ../common/qvs/../datastructures/matrix/FlatMatrix.h \
+ ../common/algorithms/alignment/readers/CompareSequencesAlignmentReader.h \
+ ../common/algorithms/alignment/readers/AlignmentStatisticsReader.h \
+ ../common/utils/FileOfFileNames.h ../common/utils/../utils.h \
+ ../common/files/ReaderAgglomerate.h ../common/files/BaseSequenceIO.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/StringUtils.h ../common/FASTQReader.h \
+ ../common/FASTAReader.h ../common/CCSSequence.h ../common/SMRTSequence.h \
+ ../common/utils/VectorUtils.h ../common/data/hdf/HDFBasReader.h \
+ ../common/data/hdf/HDFCCSReader.h ../common/data/hdf/HDFBasReader.h \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToSMRTSequence.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/FASTQSequence.h ../common/SMRTSequence.h
+bin/DotPlot.o: DotPlot.cpp ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/SMRTSequence.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/qvs/QualityValue.h ../common/qvs/../defs.h \
+ ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/../utils/MD5Utils.h \
+ ../common/qvs/../utils/../Types.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/SeqUtils.h ../common/utils.h \
+ ../common/algorithms/anchoring/MapBySuffixArray.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/LCPTable.h ../common/defs.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/NucConversion.h \
+ ../common/tuples/CompressedDNATuple.h ../common/tuples/DNATuple.h \
+ ../common/tuples/../cmpseq/CompressedSequence.h \
+ ../common/algorithms/compare/CompareStrings.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/LightweightSuffixArray.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/MultikeyQuicksort.h \
+ ../common/algorithms/sorting/../../NucConversion.h \
+ ../common/algorithms/sorting/../../FASTASequence.h \
+ ../common/algorithms/sorting/../../Types.h \
+ ../common/algorithms/sorting/DifferenceCovers.h \
+ ../common/qvs/QualityValue.h \
+ ../common/datastructures/anchoring/MatchPos.h \
+ ../common/datastructures/anchoring/AnchorParameters.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ../common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ../common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ../common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ../common/datastructures/suffixarray/../../FASTASequence.h
+bin/ExtendAlign.o: ExtendAlign.cpp \
+ ../common/algorithms/alignment/ExtendAlign.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h ../common/Types.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/../../NucConversion.h \
+ ../common/algorithms/alignment/../../defs.h \
+ ../common/algorithms/alignment/../../datastructures/matrix/FlatMatrix.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/../../statistics/statutils.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h ../common/FASTQSequence.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/../utils/MD5Utils.h \
+ ../common/qvs/../utils/../Types.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/files/ReaderAgglomerate.h ../common/files/BaseSequenceIO.h \
+ ../common/Enumerations.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/StringUtils.h ../common/FASTQReader.h \
+ ../common/FASTAReader.h ../common/FASTQSequence.h \
+ ../common/CCSSequence.h ../common/SMRTSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/utils/VectorUtils.h ../common/SMRTSequence.h \
+ ../common/data/hdf/HDFBasReader.h ../common/data/hdf/DatasetCollection.h \
+ ../common/data/hdf/HDFGroup.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/HDFData.h ../common/data/hdf/HDFConfig.h \
+ ../common/data/hdf/HDFArray.h ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/HDFZMWReader.h \
+ ../common/data/hdf/../../datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/HDFScanDataReader.h ../common/data/hdf/PlatformId.h \
+ ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFPulseDataFile.h \
+ ../common/datastructures/reads/BaseFile.h \
+ ../common/datastructures/reads/HoleXY.h \
+ ../common/datastructures/reads/PulseBaseCommon.h \
+ ../common/datastructures/reads/ScanData.h ../common/utils/VectorUtils.h \
+ ../common/utils/ChangeListID.h ../common/data/hdf/HDFCCSReader.h \
+ ../common/data/hdf/HDFBasReader.h \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h \
+ ../common/datastructures/alignmentset/SAMToSMRTSequence.h \
+ ../common/FASTASequence.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/algorithms/alignment/AlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/XMLAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../formatting/SimpleXMLUtils.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/CompareSequencesAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/IntervalAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/printers/../../../FASTQSequence.h \
+ ../common/algorithms/alignment/printers/SummaryAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h
+bin/FindLongestRepeat.o: FindLongestRepeat.cpp \
+ ../common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/LCPTable.h ../common/defs.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/Types.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/tuples/CompressedDNATuple.h \
+ ../common/tuples/DNATuple.h \
+ ../common/tuples/../cmpseq/CompressedSequence.h \
+ ../common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ../common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ../common/tuples/../cmpseq/../qvs/../defs.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/MD5Utils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/../Types.h \
+ ../common/tuples/../cmpseq/../FASTASequence.h \
+ ../common/tuples/../cmpseq/../Enumerations.h \
+ ../common/tuples/../cmpseq/../DNASequence.h \
+ ../common/tuples/../cmpseq/../datastructures/reads/ZMWGroupEntry.h \
+ ../common/tuples/../cmpseq/../data/hdf/PlatformId.h \
+ ../common/tuples/../cmpseq/../utils.h \
+ ../common/algorithms/compare/CompareStrings.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/LightweightSuffixArray.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/MultikeyQuicksort.h \
+ ../common/algorithms/sorting/../../NucConversion.h \
+ ../common/algorithms/sorting/../../FASTASequence.h \
+ ../common/algorithms/sorting/../../Types.h \
+ ../common/algorithms/sorting/DifferenceCovers.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ../common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ../common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ../common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ../common/datastructures/suffixarray/../../FASTASequence.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/StringUtils.h ../common/FASTASequence.h
+bin/GuidedAlign.o: GuidedAlign.cpp \
+ ../common/algorithms/alignment/GuidedAlign.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h ../common/Types.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/datastructures/anchoring/MatchPos.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/SeqUtils.h \
+ ../common/utils.h ../common/DNASequence.h ../common/tuples/TupleList.h \
+ ../common/utils/LogUtils.h ../common/utils/PhredUtils.h \
+ ../common/qvs/QualityValueVector.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/../utils/MD5Utils.h \
+ ../common/qvs/../utils/../Types.h ../common/utils/ProtectedNew.h \
+ ../common/qvs/QualityValue.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTQSequence.h \
+ ../common/FASTASequence.h ../common/qvs/QualityValue.h \
+ ../common/qvs/QualityValueVector.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/algorithms/alignment/SDPAlign.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/sdp/SparseDynamicProgramming.h \
+ ../common/algorithms/alignment/sdp/SDPSet.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/algorithms/alignment/sdp/SDPColumn.h \
+ ../common/algorithms/alignment/sdp/FragmentSort.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/tuples/TupleMatching.h ../common/tuples/DNATuple.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/alignment/GraphPaper.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/IDSScoreFunction.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/AlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/XMLAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../formatting/SimpleXMLUtils.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/CompareSequencesAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/IntervalAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/printers/../../../FASTQSequence.h \
+ ../common/algorithms/alignment/printers/SummaryAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h ../common/defs.h \
+ ../common/files/ReaderAgglomerate.h ../common/files/BaseSequenceIO.h \
+ ../common/Enumerations.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/StringUtils.h ../common/FASTQReader.h \
+ ../common/FASTAReader.h ../common/CCSSequence.h ../common/SMRTSequence.h \
+ ../common/utils/VectorUtils.h ../common/data/hdf/HDFBasReader.h \
+ ../common/data/hdf/DatasetCollection.h ../common/data/hdf/HDFGroup.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/HDFData.h ../common/data/hdf/HDFConfig.h \
+ ../common/data/hdf/HDFArray.h ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/HDFZMWReader.h \
+ ../common/data/hdf/../../datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/HDFScanDataReader.h ../common/data/hdf/PlatformId.h \
+ ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFPulseDataFile.h \
+ ../common/datastructures/reads/BaseFile.h \
+ ../common/datastructures/reads/HoleXY.h \
+ ../common/datastructures/reads/PulseBaseCommon.h \
+ ../common/datastructures/reads/ScanData.h ../common/utils/VectorUtils.h \
+ ../common/utils/ChangeListID.h ../common/data/hdf/HDFCCSReader.h \
+ ../common/data/hdf/HDFBasReader.h \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/datastructures/alignmentset/SAMToSMRTSequence.h \
+ ../common/algorithms/alignment/ScoreMatrices.h
+bin/KBandMatcher.o: KBandMatcher.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/algorithms/alignment.h ../common/algorithms/../NucConversion.h \
+ ../common/algorithms/../defs.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/Alignment.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentPrinter.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/XMLAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../formatting/SimpleXMLUtils.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/CompareSequencesAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/IntervalAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/Alignment.h \
+ ../common/FASTQSequence.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/algorithms/alignment/printers/../../../FASTQSequence.h \
+ ../common/algorithms/alignment/printers/SummaryAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/../../NucConversion.h \
+ ../common/algorithms/alignment/../../defs.h \
+ ../common/algorithms/alignment/../../datastructures/matrix/FlatMatrix.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/../../statistics/statutils.h \
+ ../common/algorithms/alignment/SDPAlign.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/FASTASequence.h \
+ ../common/algorithms/alignment/sdp/SparseDynamicProgramming.h \
+ ../common/algorithms/alignment/sdp/SDPSet.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/algorithms/alignment/sdp/SDPColumn.h \
+ ../common/algorithms/alignment/sdp/FragmentSort.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/tuples/TupleList.h ../common/tuples/../Types.h \
+ ../common/tuples/TupleMetrics.h ../common/tuples/TupleMask.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/BaseTuple.h ../common/tuples/TupleOperations.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/tuples/TupleMatching.h \
+ ../common/tuples/DNATuple.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/alignment/GraphPaper.h \
+ ../common/algorithms/alignment/AffineKBandAlign.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h
+bin/MAlign.o: MAlign.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/algorithms/alignment.h ../common/algorithms/../NucConversion.h \
+ ../common/algorithms/../defs.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/Alignment.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentPrinter.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/XMLAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../formatting/SimpleXMLUtils.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/CompareSequencesAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/IntervalAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/Alignment.h \
+ ../common/FASTQSequence.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/algorithms/alignment/printers/../../../FASTQSequence.h \
+ ../common/algorithms/alignment/printers/SummaryAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/../../NucConversion.h \
+ ../common/algorithms/alignment/../../defs.h \
+ ../common/algorithms/alignment/../../datastructures/matrix/FlatMatrix.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/../../statistics/statutils.h \
+ ../common/algorithms/alignment/SDPAlign.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/FASTASequence.h \
+ ../common/algorithms/alignment/sdp/SparseDynamicProgramming.h \
+ ../common/algorithms/alignment/sdp/SDPSet.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/algorithms/alignment/sdp/SDPColumn.h \
+ ../common/algorithms/alignment/sdp/FragmentSort.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/tuples/TupleList.h ../common/tuples/../Types.h \
+ ../common/tuples/TupleMetrics.h ../common/tuples/TupleMask.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/BaseTuple.h ../common/tuples/TupleOperations.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/tuples/TupleMatching.h \
+ ../common/tuples/DNATuple.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/alignment/GraphPaper.h \
+ ../common/algorithms/alignment/BellEndAlign.h \
+ ../common/datastructures/matrix/FlatMatrix.h
+bin/Mask.o: Mask.cpp ../common/data/hdf/HDFBasReader.h \
+ ../common/data/hdf/DatasetCollection.h ../common/data/hdf/HDFGroup.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/../../utils/MD5Utils.h \
+ ../common/data/hdf/../../utils/../Types.h ../common/data/hdf/HDFData.h \
+ ../common/data/hdf/HDFConfig.h ../common/data/hdf/HDFArray.h \
+ ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/HDFZMWReader.h \
+ ../common/data/hdf/../../datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/HDFScanDataReader.h ../common/data/hdf/PlatformId.h \
+ ../common/Enumerations.h ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFPulseDataFile.h \
+ ../common/datastructures/reads/BaseFile.h \
+ ../common/datastructures/reads/HoleXY.h \
+ ../common/datastructures/reads/PulseBaseCommon.h \
+ ../common/datastructures/reads/ScanData.h ../common/SMRTSequence.h \
+ ../common/FASTQSequence.h ../common/datastructures/reads/RegionTable.h \
+ ../common/utils/VectorUtils.h ../common/utils/ChangeListID.h \
+ ../common/data/hdf/HDFRegionTableReader.h \
+ ../common/data/hdf/../../datastructures/reads/RegionTable.h \
+ ../common/data/hdf/HDFRegionTableWriter.h \
+ ../common/datastructures/reads/RegionTable.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/algorithms/alignment/ExtendAlign.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/../../NucConversion.h \
+ ../common/algorithms/alignment/../../defs.h \
+ ../common/algorithms/alignment/../../datastructures/matrix/FlatMatrix.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/../../statistics/statutils.h \
+ ../common/tuples/TupleMatching.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/DNATuple.h \
+ ../common/tuples/BaseTuple.h ../common/tuples/TupleOperations.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/CommandLineParser.h \
+ ../common/utils/StringUtils.h ../common/utils/RegionUtils.h \
+ ../common/datastructures/reads/ReadInterval.h \
+ ../common/tuples/HashedTupleList.h ../common/tuples/../DNASequence.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleMetrics.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/IDSScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/FASTASequence.h ../common/utils/LogUtils.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h
+bin/OneGapAlign.o: OneGapAlign.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h \
+ ../common/algorithms/alignment/OneGapAlignment.h \
+ ../common/FASTQSequence.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h
+bin/PositionTable.o: PositionTable.cpp PositionTable.h
+bin/PrintReadWordCount.o: PrintReadWordCount.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/DNASequence.h ../common/SeqUtils.h \
+ ../common/utils.h ../common/tuples/DNATuple.h \
+ ../common/tuples/TupleList.h ../common/tuples/../Types.h \
+ ../common/tuples/TupleMetrics.h ../common/tuples/TupleMask.h \
+ ../common/tuples/BaseTuple.h ../common/tuples/TupleOperations.h \
+ ../common/SeqUtils.h ../common/NucConversion.h \
+ ../common/tuples/TupleList.h ../common/tuples/TupleMetrics.h
+bin/PrintTupleCountTable.o: PrintTupleCountTable.cpp \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/tuples/DNATuple.h \
+ ../common/tuples/TupleList.h ../common/tuples/../Types.h \
+ ../common/tuples/TupleMetrics.h ../common/tuples/TupleMask.h \
+ ../common/tuples/BaseTuple.h ../common/tuples/TupleOperations.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/NucConversion.h \
+ ../common/tuples/CompressedDNATuple.h ../common/tuples/DNATuple.h \
+ ../common/tuples/../cmpseq/CompressedSequence.h \
+ ../common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ../common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ../common/tuples/../cmpseq/../qvs/../defs.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ../common/tuples/../cmpseq/../FASTASequence.h \
+ ../common/tuples/../cmpseq/../utils.h ../common/tuples/TupleMetrics.h \
+ ../common/datastructures/tuplelists/TupleCountTable.h \
+ ../common/datastructures/tuplelists/../../tuples/TupleMetrics.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/utils.h
+bin/Prism.o: Prism.cpp prism/RNASeqParameters.h
+bin/RemoveAdapters.o: RemoveAdapters.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/algorithms/alignment.h ../common/algorithms/../NucConversion.h \
+ ../common/algorithms/../defs.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/Alignment.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentPrinter.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/XMLAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../formatting/SimpleXMLUtils.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/CompareSequencesAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/IntervalAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/Alignment.h \
+ ../common/FASTQSequence.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/algorithms/alignment/printers/../../../FASTQSequence.h \
+ ../common/algorithms/alignment/printers/SummaryAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/../../NucConversion.h \
+ ../common/algorithms/alignment/../../defs.h \
+ ../common/algorithms/alignment/../../datastructures/matrix/FlatMatrix.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/../../statistics/statutils.h \
+ ../common/algorithms/alignment/SDPAlign.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/algorithms/alignment/sdp/SparseDynamicProgramming.h \
+ ../common/algorithms/alignment/sdp/SDPSet.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/algorithms/alignment/sdp/SDPColumn.h \
+ ../common/algorithms/alignment/sdp/FragmentSort.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/tuples/TupleList.h ../common/tuples/../Types.h \
+ ../common/tuples/TupleMetrics.h ../common/tuples/TupleMask.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/BaseTuple.h ../common/tuples/TupleOperations.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/tuples/TupleMatching.h \
+ ../common/tuples/DNATuple.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/alignment/GraphPaper.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h
+bin/SALS.o: SALS.cpp ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/LCPTable.h ../common/defs.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/Types.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/tuples/CompressedDNATuple.h \
+ ../common/tuples/DNATuple.h \
+ ../common/tuples/../cmpseq/CompressedSequence.h \
+ ../common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ../common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ../common/tuples/../cmpseq/../qvs/../defs.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/MD5Utils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/../Types.h \
+ ../common/tuples/../cmpseq/../FASTASequence.h \
+ ../common/tuples/../cmpseq/../Enumerations.h \
+ ../common/tuples/../cmpseq/../DNASequence.h \
+ ../common/tuples/../cmpseq/../datastructures/reads/ZMWGroupEntry.h \
+ ../common/tuples/../cmpseq/../data/hdf/PlatformId.h \
+ ../common/tuples/../cmpseq/../utils.h \
+ ../common/algorithms/compare/CompareStrings.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/LightweightSuffixArray.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/MultikeyQuicksort.h \
+ ../common/algorithms/sorting/../../NucConversion.h \
+ ../common/algorithms/sorting/../../FASTASequence.h \
+ ../common/algorithms/sorting/../../Types.h \
+ ../common/algorithms/sorting/DifferenceCovers.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ../common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ../common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ../common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ../common/datastructures/suffixarray/../../FASTASequence.h \
+ ../common/utils.h
+bin/SAMatcher.o: SAMatcher.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTQSequence.h \
+ ../common/FASTASequence.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/../utils/MD5Utils.h \
+ ../common/qvs/../utils/../Types.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/LCPTable.h ../common/defs.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/SeqUtils.h \
+ ../common/utils.h ../common/NucConversion.h \
+ ../common/tuples/CompressedDNATuple.h ../common/tuples/DNATuple.h \
+ ../common/tuples/../cmpseq/CompressedSequence.h \
+ ../common/algorithms/compare/CompareStrings.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/LightweightSuffixArray.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/MultikeyQuicksort.h \
+ ../common/algorithms/sorting/../../NucConversion.h \
+ ../common/algorithms/sorting/../../FASTASequence.h \
+ ../common/algorithms/sorting/../../Types.h \
+ ../common/algorithms/sorting/DifferenceCovers.h \
+ ../common/qvs/QualityValue.h \
+ ../common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ../common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ../common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ../common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ../common/datastructures/suffixarray/../../FASTASequence.h \
+ ../common/algorithms/alignment/AlignmentPrinter.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/XMLAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../formatting/SimpleXMLUtils.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/CompareSequencesAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/IntervalAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/printers/../../../FASTQSequence.h \
+ ../common/algorithms/alignment/printers/SummaryAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/algorithms/alignment/sdp/VariableLengthSDPFragment.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/algorithms/alignment/sdp/NonoverlappingSparseDynamicProgramming.h \
+ ../common/algorithms/alignment/sdp/FragmentSort.h \
+ ../common/algorithms/alignment/sdp/SDPSet.h \
+ ../common/algorithms/alignment/sdp/SDPColumn.h \
+ ../common/algorithms/alignment/sdp/../AlignmentUtils.h \
+ ../common/algorithms/alignment/sdp/../../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/anchoring/MapBySuffixArray.h \
+ ../common/datastructures/anchoring/MatchPos.h \
+ ../common/datastructures/anchoring/AnchorParameters.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/anchoring/GlobalChain.h \
+ ../common/algorithms/anchoring/PrioritySearchTree.h \
+ ../common/algorithms/anchoring/BasicEndpoint.h
+bin/SAModify.o: SAModify.cpp \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/LCPTable.h ../common/defs.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/Types.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/tuples/CompressedDNATuple.h \
+ ../common/tuples/DNATuple.h \
+ ../common/tuples/../cmpseq/CompressedSequence.h \
+ ../common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ../common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ../common/tuples/../cmpseq/../qvs/../defs.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/MD5Utils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/../Types.h \
+ ../common/tuples/../cmpseq/../FASTASequence.h \
+ ../common/tuples/../cmpseq/../Enumerations.h \
+ ../common/tuples/../cmpseq/../DNASequence.h \
+ ../common/tuples/../cmpseq/../datastructures/reads/ZMWGroupEntry.h \
+ ../common/tuples/../cmpseq/../data/hdf/PlatformId.h \
+ ../common/tuples/../cmpseq/../utils.h \
+ ../common/algorithms/compare/CompareStrings.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/LightweightSuffixArray.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/MultikeyQuicksort.h \
+ ../common/algorithms/sorting/../../NucConversion.h \
+ ../common/algorithms/sorting/../../FASTASequence.h \
+ ../common/algorithms/sorting/../../Types.h \
+ ../common/algorithms/sorting/DifferenceCovers.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/FASTASequence.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/StringUtils.h ../common/FASTASequence.h \
+ ../common/NucConversion.h ../common/datastructures/suffixarray/ssort.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ../common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ../common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ../common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ../common/datastructures/suffixarray/../../FASTASequence.h
+bin/SAPrinter.o: SAPrinter.cpp \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/LCPTable.h ../common/defs.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/Types.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/tuples/CompressedDNATuple.h \
+ ../common/tuples/DNATuple.h \
+ ../common/tuples/../cmpseq/CompressedSequence.h \
+ ../common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ../common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ../common/tuples/../cmpseq/../qvs/../defs.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/MD5Utils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/../Types.h \
+ ../common/tuples/../cmpseq/../FASTASequence.h \
+ ../common/tuples/../cmpseq/../Enumerations.h \
+ ../common/tuples/../cmpseq/../DNASequence.h \
+ ../common/tuples/../cmpseq/../datastructures/reads/ZMWGroupEntry.h \
+ ../common/tuples/../cmpseq/../data/hdf/PlatformId.h \
+ ../common/tuples/../cmpseq/../utils.h \
+ ../common/algorithms/compare/CompareStrings.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/LightweightSuffixArray.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/MultikeyQuicksort.h \
+ ../common/algorithms/sorting/../../NucConversion.h \
+ ../common/algorithms/sorting/../../FASTASequence.h \
+ ../common/algorithms/sorting/../../Types.h \
+ ../common/algorithms/sorting/DifferenceCovers.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ../common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ../common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ../common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ../common/datastructures/suffixarray/../../FASTASequence.h \
+ ../common/DNASequence.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/StringUtils.h ../common/FASTASequence.h
+bin/SAQuery.o: SAQuery.cpp ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/LCPTable.h ../common/defs.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/Types.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/tuples/CompressedDNATuple.h \
+ ../common/tuples/DNATuple.h \
+ ../common/tuples/../cmpseq/CompressedSequence.h \
+ ../common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ../common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ../common/tuples/../cmpseq/../qvs/../defs.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/MD5Utils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/../Types.h \
+ ../common/tuples/../cmpseq/../FASTASequence.h \
+ ../common/tuples/../cmpseq/../Enumerations.h \
+ ../common/tuples/../cmpseq/../DNASequence.h \
+ ../common/tuples/../cmpseq/../datastructures/reads/ZMWGroupEntry.h \
+ ../common/tuples/../cmpseq/../data/hdf/PlatformId.h \
+ ../common/tuples/../cmpseq/../utils.h \
+ ../common/algorithms/compare/CompareStrings.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/LightweightSuffixArray.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/MultikeyQuicksort.h \
+ ../common/algorithms/sorting/../../NucConversion.h \
+ ../common/algorithms/sorting/../../FASTASequence.h \
+ ../common/algorithms/sorting/../../Types.h \
+ ../common/algorithms/sorting/DifferenceCovers.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ../common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ../common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ../common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ../common/datastructures/suffixarray/../../FASTASequence.h \
+ ../common/FASTASequence.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/StringUtils.h ../common/FASTASequence.h \
+ ../common/NucConversion.h
+bin/SAWriter.o: SAWriter.cpp \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/LCPTable.h ../common/defs.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/Types.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/tuples/CompressedDNATuple.h \
+ ../common/tuples/DNATuple.h \
+ ../common/tuples/../cmpseq/CompressedSequence.h \
+ ../common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ../common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ../common/tuples/../cmpseq/../qvs/../defs.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/MD5Utils.h \
+ ../common/tuples/../cmpseq/../qvs/../utils/../Types.h \
+ ../common/tuples/../cmpseq/../FASTASequence.h \
+ ../common/tuples/../cmpseq/../Enumerations.h \
+ ../common/tuples/../cmpseq/../DNASequence.h \
+ ../common/tuples/../cmpseq/../datastructures/reads/ZMWGroupEntry.h \
+ ../common/tuples/../cmpseq/../data/hdf/PlatformId.h \
+ ../common/tuples/../cmpseq/../utils.h \
+ ../common/algorithms/compare/CompareStrings.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/LightweightSuffixArray.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/MultikeyQuicksort.h \
+ ../common/algorithms/sorting/../../NucConversion.h \
+ ../common/algorithms/sorting/../../FASTASequence.h \
+ ../common/algorithms/sorting/../../Types.h \
+ ../common/algorithms/sorting/DifferenceCovers.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/FASTASequence.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/utils/StringUtils.h ../common/FASTASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/suffixarray/ssort.h \
+ ../common/algorithms/sorting/qsufsort.h \
+ ../common/algorithms/sorting/Karkkainen.h \
+ ../common/algorithms/sorting/../../DNASequence.h \
+ ../common/cmpseq/CompressedSequence.h
+bin/SDPMatcher.o: SDPMatcher.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/SeqUtils.h \
+ ../common/utils.h ../common/NucConversion.h \
+ ../common/tuples/TupleMetrics.h ../common/algorithms/alignment.h \
+ ../common/algorithms/../NucConversion.h ../common/algorithms/../defs.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/Alignment.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/utils.h ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentPrinter.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/XMLAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../formatting/SimpleXMLUtils.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/CompareSequencesAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/IntervalAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/Alignment.h \
+ ../common/FASTQSequence.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/algorithms/alignment/printers/../../../FASTQSequence.h \
+ ../common/algorithms/alignment/printers/SummaryAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/../../NucConversion.h \
+ ../common/algorithms/alignment/../../defs.h \
+ ../common/algorithms/alignment/../../datastructures/matrix/FlatMatrix.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/../../statistics/statutils.h \
+ ../common/algorithms/alignment/SDPAlign.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/FASTASequence.h \
+ ../common/algorithms/alignment/sdp/SparseDynamicProgramming.h \
+ ../common/algorithms/alignment/sdp/SDPSet.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/algorithms/alignment/sdp/SDPColumn.h \
+ ../common/algorithms/alignment/sdp/FragmentSort.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/tuples/TupleList.h ../common/tuples/DNATuple.h \
+ ../common/tuples/TupleMatching.h ../common/tuples/DNATuple.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/alignment/GraphPaper.h
+bin/SeqReader.o: SeqReader.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/DNASequence.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/SeqUtils.h \
+ ../common/utils.h ../common/NucConversion.h
+bin/SWMatcher.o: SWMatcher.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/algorithms/alignment.h ../common/algorithms/../NucConversion.h \
+ ../common/algorithms/../defs.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/Alignment.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentMap.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentBlock.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/../datastructures/alignment/Path.h \
+ ../common/algorithms/../datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentPrinter.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/algorithms/alignment/printers/XMLAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../formatting/SimpleXMLUtils.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/CompareSequencesAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/VulgarAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/IntervalAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/AlignmentCandidate.h \
+ ../common/algorithms/alignment/printers/../../../datastructures/alignment/Alignment.h \
+ ../common/FASTQSequence.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/algorithms/alignment/printers/../../../FASTQSequence.h \
+ ../common/algorithms/alignment/printers/SummaryAlignmentPrinter.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/KBandAlign.h \
+ ../common/algorithms/alignment/../../NucConversion.h \
+ ../common/algorithms/alignment/../../defs.h \
+ ../common/algorithms/alignment/../../datastructures/matrix/FlatMatrix.h \
+ ../common/algorithms/alignment/../../datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/../../statistics/statutils.h \
+ ../common/algorithms/alignment/SDPAlign.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/algorithms/alignment/sdp/SparseDynamicProgramming.h \
+ ../common/algorithms/alignment/sdp/SDPSet.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/algorithms/alignment/sdp/SDPColumn.h \
+ ../common/algorithms/alignment/sdp/FragmentSort.h \
+ ../common/algorithms/alignment/sdp/SDPFragment.h \
+ ../common/tuples/TupleList.h ../common/tuples/../Types.h \
+ ../common/tuples/TupleMetrics.h ../common/tuples/TupleMask.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/BaseTuple.h ../common/tuples/TupleOperations.h \
+ ../common/SeqUtils.h ../common/utils.h ../common/tuples/TupleMatching.h \
+ ../common/tuples/DNATuple.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/algorithms/alignment/GraphPaper.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/IDSScoreFunction.h \
+ ../common/utils/LogUtils.h
+bin/TabulateAlignment.o: TabulateAlignment.cpp \
+ ../common/datastructures/matrix/FlatMatrix.h ../common/Types.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h ../common/NucConversion.h \
+ ../common/utils.h
+bin/WordCounter.o: WordCounter.cpp ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/DNASequence.h \
+ ../common/tuples/DNATuple.h ../common/tuples/TupleList.h \
+ ../common/tuples/../Types.h ../common/tuples/TupleMetrics.h \
+ ../common/tuples/TupleMask.h ../common/tuples/BaseTuple.h \
+ ../common/tuples/TupleOperations.h ../common/SeqUtils.h \
+ ../common/utils.h ../common/NucConversion.h \
+ ../common/tuples/TupleMetrics.h ../common/Types.h

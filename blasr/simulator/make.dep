@@ -1,0 +1,667 @@
+bin/Alchemy.o: Alchemy.cpp ../common/simulator/ContextOutputList.h \
+ ../common/simulator/../../common/simulator/OutputList.h \
+ ../common/simulator/../../common/simulator/CDFMap.h \
+ ../common/statistics/statutils.h ../common/utils.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/algorithms/metagenomics/FindRandomSequence.h \
+ ../common/simulator/LengthHistogram.h ../common/simulator/CDFMap.h \
+ ../common/datastructures/alignment/CmpAlignment.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/Enumerations.h ../common/simulator/OutputSampleListSet.h \
+ ../common/simulator/OutputSampleList.h \
+ ../common/simulator/OutputSample.h ../common/simulator/QualitySample.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/qvs/QualityValue.h ../common/qvs/../defs.h \
+ ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/qvs/QualityValue.h ../common/data/hdf/HDFBasWriter.h \
+ ../common/data/hdf/HDFArray.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFConfig.h ../common/data/hdf/HDFData.h \
+ ../common/data/hdf/HDFGroup.h ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/FASTQSequence.h ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/DatasetCollection.h ../common/utils/SMRTReadUtils.h \
+ ../common/utils/../FASTQSequence.h ../common/utils/StringUtils.h \
+ ../common/data/hdf/HDFScanDataWriter.h ../common/data/hdf/PlatformId.h \
+ ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFRegionTableWriter.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/metagenome/TitleTable.h \
+ ../common/datastructures/metagenome/../../utils.h
+bin/BasH5Simulator.o: BasH5Simulator.cpp \
+ ../common/simulator/ContextOutputList.h \
+ ../common/simulator/../../common/simulator/OutputList.h \
+ ../common/simulator/../../common/simulator/CDFMap.h \
+ ../common/statistics/statutils.h ../common/utils.h \
+ ../common/DNASequence.h ../common/NucConversion.h ../common/Types.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/algorithms/metagenomics/FindRandomSequence.h \
+ ../common/simulator/LengthHistogram.h ../common/simulator/CDFMap.h \
+ ../common/datastructures/alignment/CmpAlignment.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/Enumerations.h ../common/simulator/OutputSampleListSet.h \
+ ../common/simulator/OutputSampleList.h \
+ ../common/simulator/OutputSample.h ../common/simulator/QualitySample.h \
+ ../common/SMRTSequence.h ../common/FASTQSequence.h \
+ ../common/qvs/QualityValue.h ../common/qvs/../defs.h \
+ ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/qvs/QualityValue.h ../common/data/hdf/HDFBasWriter.h \
+ ../common/data/hdf/HDFArray.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFConfig.h ../common/data/hdf/HDFData.h \
+ ../common/data/hdf/HDFGroup.h ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/FASTQSequence.h ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/DatasetCollection.h ../common/utils/SMRTReadUtils.h \
+ ../common/utils/../FASTQSequence.h ../common/utils/StringUtils.h \
+ ../common/data/hdf/HDFScanDataWriter.h ../common/data/hdf/PlatformId.h \
+ ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFRegionTableWriter.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/metagenome/TitleTable.h \
+ ../common/datastructures/metagenome/../../utils.h
+bin/CmpH5ToMerProfile.o: CmpH5ToMerProfile.cpp
+bin/LoadContextOut.o: LoadContextOut.cpp \
+ ../common/simulator/ContextOutputList.h \
+ ../common/simulator/../../common/simulator/OutputList.h \
+ ../common/simulator/../../common/simulator/CDFMap.h \
+ ../common/statistics/statutils.h ../common/utils.h ../common/utils.h
+bin/PrintLengthHistogramFromCmph5.o: PrintLengthHistogramFromCmph5.cpp \
+ ../common/data/hdf/HDFCmpReader.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/datastructures/alignment/CmpFile.h \
+ ../common/datastructures/reads/ReadType.h \
+ ../common/datastructures/alignment/CmpIndexedStringTable.h \
+ ../common/datastructures/saf/AlnGroup.h \
+ ../common/datastructures/saf/AlnInfo.h \
+ ../common/datastructures/alignment/CmpAlignment.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/NucConversion.h ../common/Types.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/Enumerations.h ../common/Types.h \
+ ../common/datastructures/saf/RefGroup.h \
+ ../common/datastructures/saf/RefInfo.h \
+ ../common/datastructures/saf/MovieInfo.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h ../common/FASTQSequence.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/../utils/MD5Utils.h \
+ ../common/qvs/../utils/../Types.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/alignment/CmpReadGroupTable.h \
+ ../common/datastructures/alignment/CmpRefSeqTable.h \
+ ../common/datastructures/alignment/ByteAlignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/utils.h \
+ ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/data/hdf/HDFAtom.h ../common/data/hdf/HDFConfig.h \
+ ../common/data/hdf/HDFGroup.h ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/HDFData.h ../common/data/hdf/HDFArray.h \
+ ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFCmpData.h \
+ ../common/data/hdf/HDFCmpRefAlignmentGroup.h \
+ ../common/data/hdf/HDFData.h ../common/data/hdf/HDFGroup.h \
+ ../common/data/hdf/HDFCmpExperimentGroup.h \
+ ../common/data/hdf/HDFCmpSupportedFields.h \
+ ../common/data/hdf/HDFAlnGroupGroup.h ../common/data/hdf/HDFArray.h \
+ ../common/data/hdf/HDFAlnInfoGroup.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/HDF2DArray.h ../common/data/hdf/HDFRefGroupGroup.h \
+ ../common/data/hdf/HDFRefInfoGroup.h \
+ ../common/data/hdf/HDFMovieInfoGroup.h \
+ ../common/data/hdf/HDFCmpRootGroup.h \
+ ../common/data/hdf/HDFCmpSupportedFields.h ../common/SMRTSequence.h \
+ ../common/FASTQSequence.h ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignment/CmpFile.h ../common/utils.h
+bin/Sageify.o: Sageify.cpp ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTASequence.h \
+ ../common/statistics/statutils.h ../common/utils.h \
+ ../common/algorithms/metagenomics/FindRandomSequence.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h
+bin/StoreQualityByContext.o: StoreQualityByContext.cpp \
+ ../common/files/ReaderAgglomerate.h ../common/files/BaseSequenceIO.h \
+ ../common/Enumerations.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTQReader.h \
+ ../common/FASTAReader.h ../common/FASTQSequence.h \
+ ../common/qvs/QualityValue.h ../common/qvs/../defs.h \
+ ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/CCSSequence.h ../common/SMRTSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/utils/VectorUtils.h ../common/SMRTSequence.h \
+ ../common/data/hdf/HDFBasReader.h ../common/data/hdf/DatasetCollection.h \
+ ../common/data/hdf/HDFGroup.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/HDFData.h ../common/data/hdf/HDFConfig.h \
+ ../common/data/hdf/HDFArray.h ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/FASTQSequence.h ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/HDFZMWReader.h \
+ ../common/data/hdf/../../datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/HDFScanDataReader.h ../common/data/hdf/PlatformId.h \
+ ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFPulseDataFile.h \
+ ../common/datastructures/reads/BaseFile.h \
+ ../common/datastructures/reads/HoleXY.h \
+ ../common/datastructures/reads/PulseBaseCommon.h \
+ ../common/datastructures/reads/ScanData.h ../common/utils/VectorUtils.h \
+ ../common/utils/ChangeListID.h ../common/data/hdf/HDFCCSReader.h \
+ ../common/data/hdf/HDFBasReader.h \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToSMRTSequence.h \
+ ../common/utils/FileOfFileNames.h ../common/utils/../utils.h \
+ ../common/simulator/ContextSet.h ../common/simulator/ContextSample.h \
+ ../common/simulator/QualitySample.h ../common/qvs/QualityValue.h \
+ ../common/statistics/statutils.h \
+ ../common/simulator/OutputSampleListSet.h \
+ ../common/simulator/OutputSampleList.h \
+ ../common/simulator/OutputSample.h ../common/simulator/QualitySample.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/datastructures/alignmentset/SAMToAlignmentCandidateAdapter.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMFlag.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h
+bin/StoreQualityByContextFromCmpH5.o: StoreQualityByContextFromCmpH5.cpp \
+ ../common/files/ReaderAgglomerate.h ../common/files/BaseSequenceIO.h \
+ ../common/Enumerations.h ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h ../common/DNASequence.h ../common/NucConversion.h \
+ ../common/Types.h ../common/utils/StringUtils.h \
+ ../common/utils/MD5Utils.h ../common/utils/../Types.h \
+ ../common/FASTASequence.h ../common/Enumerations.h \
+ ../common/DNASequence.h ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/FASTQReader.h \
+ ../common/FASTAReader.h ../common/FASTQSequence.h \
+ ../common/qvs/QualityValue.h ../common/qvs/../defs.h \
+ ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/CCSSequence.h ../common/SMRTSequence.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/utils/VectorUtils.h ../common/SMRTSequence.h \
+ ../common/data/hdf/HDFBasReader.h ../common/data/hdf/DatasetCollection.h \
+ ../common/data/hdf/HDFGroup.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Include.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/hdf5.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5public.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5pubconf.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5version.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5api_adpt.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Apublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ipublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Opublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Lpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Tpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ACpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Cpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Dpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Epubgen.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Fpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Gpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5MMpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Ppublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Zpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Rpublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Spublic.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDcore.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDfamily.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDlog.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpi.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmpio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDmulti.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDsec2.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDstdio.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FDdirect.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Exception.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IdComponent.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSpace.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PropList.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Location.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Classes.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Object.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AbstractDs.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Attribute.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CommonFG.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DxferProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FaccProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FcreatProp.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5AtomType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5PredType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5EnumType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5IntType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5FloatType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5StrType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5CompType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5ArrayType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5VarLenType.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5DataSet.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Group.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5File.h \
+ /net/eichler/vol5/home/mchaisso/software/hdf/include/H5Library.h \
+ ../common/data/hdf/HDFAttributable.h \
+ ../common/data/hdf/../../utils/StringUtils.h \
+ ../common/data/hdf/HDFData.h ../common/data/hdf/HDFConfig.h \
+ ../common/data/hdf/HDFArray.h ../common/data/hdf/BufferedHDFArray.h \
+ ../common/data/hdf/HDFWriteBuffer.h ../common/data/hdf/HDFFile.h \
+ ../common/FASTQSequence.h ../common/data/hdf/../../DNASequence.h \
+ ../common/data/hdf/../../FASTQSequence.h ../common/data/hdf/HDF2DArray.h \
+ ../common/data/hdf/BufferedHDF2DArray.h ../common/data/hdf/HDFAtom.h \
+ ../common/data/hdf/HDFZMWReader.h \
+ ../common/data/hdf/../../datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/HDFScanDataReader.h ../common/data/hdf/PlatformId.h \
+ ../common/datastructures/reads/ScanData.h \
+ ../common/datastructures/reads/../../data/hdf/PlatformId.h \
+ ../common/data/hdf/HDFPulseDataFile.h \
+ ../common/datastructures/reads/BaseFile.h \
+ ../common/datastructures/reads/HoleXY.h \
+ ../common/datastructures/reads/PulseBaseCommon.h \
+ ../common/datastructures/reads/ScanData.h ../common/utils/VectorUtils.h \
+ ../common/utils/ChangeListID.h ../common/data/hdf/HDFCCSReader.h \
+ ../common/data/hdf/HDFBasReader.h \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToSMRTSequence.h \
+ ../common/utils/FileOfFileNames.h ../common/utils/../utils.h \
+ ../common/simulator/ContextSet.h ../common/simulator/ContextSample.h \
+ ../common/simulator/QualitySample.h ../common/qvs/QualityValue.h \
+ ../common/statistics/statutils.h \
+ ../common/simulator/OutputSampleListSet.h \
+ ../common/simulator/OutputSampleList.h \
+ ../common/simulator/OutputSample.h ../common/simulator/QualitySample.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/datastructures/alignmentset/SAMToAlignmentCandidateAdapter.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMFlag.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h

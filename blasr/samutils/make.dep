@@ -1,0 +1,368 @@
+bin/PrintConsensus.o: PrintConsensus.cpp \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/utils/StringUtils.h ../common/utils/MD5Utils.h \
+ ../common/utils/../Types.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/SMRTSequence.h ../common/NucConversion.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/FASTQSequence.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToAlignmentCandidateAdapter.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMFlag.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h
+bin/PrintCoverage.o: PrintCoverage.cpp \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/utils/StringUtils.h ../common/utils/MD5Utils.h \
+ ../common/utils/../Types.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/SMRTSequence.h ../common/NucConversion.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/FASTQSequence.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToAlignmentCandidateAdapter.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMFlag.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h
+bin/PrintGappyRegions.o: PrintGappyRegions.cpp \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/utils/StringUtils.h ../common/utils/MD5Utils.h \
+ ../common/utils/../Types.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/SMRTSequence.h ../common/NucConversion.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/FASTQSequence.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToAlignmentCandidateAdapter.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMFlag.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h
+bin/PrintGaps.o: PrintGaps.cpp \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/utils/StringUtils.h ../common/utils/MD5Utils.h \
+ ../common/utils/../Types.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/SMRTSequence.h ../common/NucConversion.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/FASTQSequence.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToAlignmentCandidateAdapter.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMFlag.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h
+bin/PrintMaxAlignedRead.o: PrintMaxAlignedRead.cpp \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/utils/StringUtils.h ../common/utils/MD5Utils.h \
+ ../common/utils/../Types.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/SMRTSequence.h ../common/NucConversion.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/FASTQSequence.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToAlignmentCandidateAdapter.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMFlag.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h
+bin/SamToM0.o: SamToM0.cpp \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/utils/StringUtils.h ../common/utils/MD5Utils.h \
+ ../common/utils/../Types.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/SMRTSequence.h ../common/NucConversion.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/FASTQSequence.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToAlignmentCandidateAdapter.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMFlag.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h
+bin/SVRealigner.o: SVRealigner.cpp \
+ ../common/algorithms/alignment/readers/sam/SAMReader.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/utils/StringUtils.h ../common/utils/MD5Utils.h \
+ ../common/utils/../Types.h \
+ ../common/datastructures/alignment/CigarString.h \
+ ../common/datastructures/alignmentset/SAMSupplementalQVList.h \
+ ../common/SMRTSequence.h ../common/NucConversion.h \
+ ../common/FASTQSequence.h ../common/FASTASequence.h \
+ ../common/Enumerations.h ../common/DNASequence.h ../common/Types.h \
+ ../common/datastructures/reads/ZMWGroupEntry.h \
+ ../common/data/hdf/PlatformId.h ../common/qvs/QualityValue.h \
+ ../common/qvs/../defs.h ../common/qvs/../utils/ChangeListID.h \
+ ../common/qvs/../utils/StringUtils.h ../common/qvs/QualityValueVector.h \
+ ../common/qvs/QualityValue.h ../common/utils/ProtectedNew.h \
+ ../common/datastructures/matrix/Matrix.h \
+ ../common/datastructures/matrix/../../Types.h \
+ ../common/cmpseq/CompressedSequence.h \
+ ../common/cmpseq/ReverseCompressIndex.h \
+ ../common/cmpseq/../qvs/QualityValue.h \
+ ../common/cmpseq/../FASTASequence.h ../common/cmpseq/../utils.h \
+ ../common/datastructures/reads/RegionTable.h \
+ ../common/datastructures/reads/../../Enumerations.h \
+ ../common/datastructures/alignmentset/SAMQVConversion.h \
+ ../common/FASTQSequence.h \
+ ../common/datastructures/alignmentset/SAMKeywordValuePair.h \
+ ../common/datastructures/alignmentset/ReadGroup.h \
+ ../common/datastructures/alignmentset/ReferenceSequence.h \
+ ../common/datastructures/alignmentset/AlignmentSet.h \
+ ../common/datastructures/alignmentset/SAMHeader.h \
+ ../common/FASTASequence.h ../common/utils.h \
+ ../common/datastructures/alignmentset/SAMToAlignmentCandidateAdapter.h \
+ ../common/datastructures/alignmentset/SAMAlignment.h \
+ ../common/datastructures/alignmentset/SAMFlag.h \
+ ../common/datastructures/alignment/AlignmentCandidate.h \
+ ../common/datastructures/alignment/Alignment.h ../common/DNASequence.h \
+ ../common/datastructures/alignment/AlignmentMap.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentGapList.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/datastructures/alignment/AlignmentStats.h \
+ ../common/FASTAReader.h \
+ ../common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ../common/Types.h \
+ ../common/algorithms/alignment/printers/StickAlignmentPrinter.h \
+ ../common/algorithms/alignment/Alignment.h \
+ ../common/algorithms/alignment/AlignmentUtils.h ../common/defs.h \
+ ../common/NucConversion.h ../common/datastructures/matrix/FlatMatrix.h \
+ ../common/datastructures/alignment/Alignment.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/SWAlign.h \
+ ../common/algorithms/alignment/AlignmentUtils.h \
+ ../common/datastructures/alignment/Path.h \
+ ../common/algorithms/alignment/DistanceMatrixScoreFunction.h \
+ ../common/algorithms/alignment/ScoreMatrices.h \
+ ../common/algorithms/alignment/BaseScoreFunction.h \
+ ../common/CommandLineParser.h ../common/utils/StringUtils.h \
+ ../common/datastructures/alignment/AlignmentBlock.h \
+ ../common/datastructures/alignment/AlignmentContext.h \
+ ../common/datastructures/alignment/../../Enumerations.h \
+ ../common/algorithms/alignment/printers/SAMPrinter.h

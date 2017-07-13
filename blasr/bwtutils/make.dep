@@ -1,0 +1,313 @@
+bin/BWTLocateList.o: BWTLocateList.cpp ..//common/FASTASequence.h \
+ ..//common/Enumerations.h ..//common/DNASequence.h \
+ ..//common/NucConversion.h ..//common/Types.h \
+ ..//common/datastructures/reads/ZMWGroupEntry.h \
+ ..//common/data/hdf/PlatformId.h ..//common/FASTAReader.h \
+ ..//common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ..//common/Types.h ..//common/DNASequence.h \
+ ..//common/utils/StringUtils.h ..//common/utils/MD5Utils.h \
+ ..//common/utils/../Types.h ..//common/FASTASequence.h \
+ ..//common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ..//common/datastructures/suffixarray/SuffixArray.h \
+ ..//common/datastructures/suffixarray/LCPTable.h ..//common/defs.h \
+ ..//common/tuples/DNATuple.h ..//common/tuples/TupleList.h \
+ ..//common/tuples/../Types.h ..//common/tuples/TupleMetrics.h \
+ ..//common/tuples/TupleMask.h ..//common/tuples/BaseTuple.h \
+ ..//common/tuples/TupleOperations.h ..//common/SeqUtils.h \
+ ..//common/utils.h ..//common/NucConversion.h \
+ ..//common/tuples/CompressedDNATuple.h ..//common/tuples/DNATuple.h \
+ ..//common/tuples/../cmpseq/CompressedSequence.h \
+ ..//common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ..//common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ..//common/tuples/../cmpseq/../qvs/../defs.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ..//common/tuples/../cmpseq/../FASTASequence.h \
+ ..//common/tuples/../cmpseq/../utils.h \
+ ..//common/algorithms/compare/CompareStrings.h \
+ ..//common/algorithms/sorting/qsufsort.h \
+ ..//common/algorithms/sorting/LightweightSuffixArray.h \
+ ..//common/algorithms/sorting/qsufsort.h \
+ ..//common/algorithms/sorting/MultikeyQuicksort.h \
+ ..//common/algorithms/sorting/../../NucConversion.h \
+ ..//common/algorithms/sorting/../../FASTASequence.h \
+ ..//common/algorithms/sorting/../../Types.h \
+ ..//common/algorithms/sorting/DifferenceCovers.h \
+ ..//common/qvs/QualityValue.h ..//common/utils/ProtectedNew.h \
+ ..//common/datastructures/suffixarray/SharedSuffixArray.h \
+ ..//common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ..//common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ..//common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ..//common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ..//common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ..//common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ..//common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ..//common/datastructures/suffixarray/../../FASTASequence.h \
+ ..//common/datastructures/suffixarray/SuffixArray.h \
+ ..//common/datastructures/bwt/BWT.h ..//common/datastructures/bwt/Occ.h \
+ ..//common/datastructures/bwt/../../DNASequence.h \
+ ..//common/datastructures/bwt/../../NucConversion.h \
+ ..//common/datastructures/bwt/../../utils.h \
+ ..//common/datastructures/bwt/../matrix/Matrix.h \
+ ..//common/datastructures/bwt/../matrix/../../Types.h \
+ ..//common/datastructures/bwt/../matrix/FlatMatrix.h \
+ ..//common/datastructures/bwt/Pos.h \
+ ..//common/datastructures/bwt/PackedHash.h \
+ ..//common/datastructures/bwt/../../Types.h \
+ ..//common/datastructures/bwt/../../utils/BitUtils.h \
+ ..//common/datastructures/bwt/../../utils/../Types.h \
+ ..//common/datastructures/bwt/../../datastructures/suffixarray/SuffixArray.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/PackedDNASequence.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../DNASequence.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../NucConversion.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../utils/BitUtils.h \
+ ..//common/datastructures/bwt/../../FASTASequence.h ..//common/utils.h
+bin/BWTQuery.o: BWTQuery.cpp ..//common/FASTASequence.h \
+ ..//common/Enumerations.h ..//common/DNASequence.h \
+ ..//common/NucConversion.h ..//common/Types.h \
+ ..//common/datastructures/reads/ZMWGroupEntry.h \
+ ..//common/data/hdf/PlatformId.h ..//common/FASTAReader.h \
+ ..//common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ..//common/Types.h ..//common/DNASequence.h \
+ ..//common/utils/StringUtils.h ..//common/utils/MD5Utils.h \
+ ..//common/utils/../Types.h ..//common/FASTASequence.h \
+ ..//common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ..//common/datastructures/suffixarray/SuffixArray.h \
+ ..//common/datastructures/suffixarray/LCPTable.h ..//common/defs.h \
+ ..//common/tuples/DNATuple.h ..//common/tuples/TupleList.h \
+ ..//common/tuples/../Types.h ..//common/tuples/TupleMetrics.h \
+ ..//common/tuples/TupleMask.h ..//common/tuples/BaseTuple.h \
+ ..//common/tuples/TupleOperations.h ..//common/SeqUtils.h \
+ ..//common/utils.h ..//common/NucConversion.h \
+ ..//common/tuples/CompressedDNATuple.h ..//common/tuples/DNATuple.h \
+ ..//common/tuples/../cmpseq/CompressedSequence.h \
+ ..//common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ..//common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ..//common/tuples/../cmpseq/../qvs/../defs.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ..//common/tuples/../cmpseq/../FASTASequence.h \
+ ..//common/tuples/../cmpseq/../utils.h \
+ ..//common/algorithms/compare/CompareStrings.h \
+ ..//common/algorithms/sorting/qsufsort.h \
+ ..//common/algorithms/sorting/LightweightSuffixArray.h \
+ ..//common/algorithms/sorting/qsufsort.h \
+ ..//common/algorithms/sorting/MultikeyQuicksort.h \
+ ..//common/algorithms/sorting/../../NucConversion.h \
+ ..//common/algorithms/sorting/../../FASTASequence.h \
+ ..//common/algorithms/sorting/../../Types.h \
+ ..//common/algorithms/sorting/DifferenceCovers.h \
+ ..//common/qvs/QualityValue.h ..//common/utils/ProtectedNew.h \
+ ..//common/datastructures/suffixarray/SharedSuffixArray.h \
+ ..//common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ..//common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ..//common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ..//common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ..//common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ..//common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ..//common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ..//common/datastructures/suffixarray/../../FASTASequence.h \
+ ..//common/datastructures/suffixarray/SuffixArray.h \
+ ..//common/datastructures/bwt/BWT.h ..//common/datastructures/bwt/Occ.h \
+ ..//common/datastructures/bwt/../../DNASequence.h \
+ ..//common/datastructures/bwt/../../NucConversion.h \
+ ..//common/datastructures/bwt/../../utils.h \
+ ..//common/datastructures/bwt/../matrix/Matrix.h \
+ ..//common/datastructures/bwt/../matrix/../../Types.h \
+ ..//common/datastructures/bwt/../matrix/FlatMatrix.h \
+ ..//common/datastructures/bwt/Pos.h \
+ ..//common/datastructures/bwt/PackedHash.h \
+ ..//common/datastructures/bwt/../../Types.h \
+ ..//common/datastructures/bwt/../../utils/BitUtils.h \
+ ..//common/datastructures/bwt/../../utils/../Types.h \
+ ..//common/datastructures/bwt/../../datastructures/suffixarray/SuffixArray.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/PackedDNASequence.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../DNASequence.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../NucConversion.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../utils/BitUtils.h \
+ ..//common/datastructures/bwt/../../FASTASequence.h ..//common/utils.h
+bin/BwtToSuffixArray.o: BwtToSuffixArray.cpp \
+ ../common/datastructures/bwt/BWT.h ../common/datastructures/bwt/Occ.h \
+ ../common/datastructures/bwt/../../DNASequence.h \
+ ../common/datastructures/bwt/../../NucConversion.h \
+ ../common/datastructures/bwt/../../Types.h \
+ ../common/datastructures/bwt/../../NucConversion.h \
+ ../common/datastructures/bwt/../../utils.h \
+ ../common/datastructures/bwt/../matrix/Matrix.h \
+ ../common/datastructures/bwt/../matrix/../../Types.h \
+ ../common/datastructures/bwt/../matrix/FlatMatrix.h ..//common/Types.h \
+ ../common/datastructures/bwt/Pos.h \
+ ../common/datastructures/bwt/PackedHash.h \
+ ../common/datastructures/bwt/../../Types.h \
+ ../common/datastructures/bwt/../../utils/BitUtils.h \
+ ../common/datastructures/bwt/../../utils/../Types.h \
+ ../common/datastructures/bwt/../../datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/bwt/../../datastructures/suffixarray/LCPTable.h \
+ ..//common/defs.h ..//common/tuples/DNATuple.h \
+ ..//common/tuples/TupleList.h ..//common/tuples/../Types.h \
+ ..//common/tuples/TupleMetrics.h ..//common/tuples/TupleMask.h \
+ ..//common/tuples/BaseTuple.h ..//common/tuples/TupleOperations.h \
+ ..//common/DNASequence.h ..//common/SeqUtils.h ..//common/utils.h \
+ ..//common/DNASequence.h ..//common/NucConversion.h \
+ ..//common/NucConversion.h ..//common/tuples/CompressedDNATuple.h \
+ ..//common/tuples/DNATuple.h \
+ ..//common/tuples/../cmpseq/CompressedSequence.h \
+ ..//common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ..//common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ..//common/tuples/../cmpseq/../qvs/../defs.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/MD5Utils.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/../Types.h \
+ ..//common/tuples/../cmpseq/../FASTASequence.h \
+ ..//common/tuples/../cmpseq/../Enumerations.h \
+ ..//common/tuples/../cmpseq/../DNASequence.h \
+ ..//common/tuples/../cmpseq/../datastructures/reads/ZMWGroupEntry.h \
+ ..//common/tuples/../cmpseq/../data/hdf/PlatformId.h \
+ ..//common/tuples/../cmpseq/../utils.h \
+ ..//common/algorithms/compare/CompareStrings.h \
+ ..//common/algorithms/sorting/qsufsort.h \
+ ..//common/algorithms/sorting/LightweightSuffixArray.h \
+ ..//common/algorithms/sorting/qsufsort.h \
+ ..//common/algorithms/sorting/MultikeyQuicksort.h \
+ ..//common/algorithms/sorting/../../NucConversion.h \
+ ..//common/algorithms/sorting/../../FASTASequence.h \
+ ..//common/algorithms/sorting/../../Types.h \
+ ..//common/algorithms/sorting/DifferenceCovers.h \
+ ..//common/qvs/QualityValue.h ..//common/utils/ProtectedNew.h \
+ ../common/datastructures/bwt/../../datastructures/sequence/PackedDNASequence.h \
+ ../common/datastructures/bwt/../../datastructures/sequence/../../DNASequence.h \
+ ../common/datastructures/bwt/../../datastructures/sequence/../../NucConversion.h \
+ ../common/datastructures/bwt/../../datastructures/sequence/../../utils/BitUtils.h \
+ ../common/datastructures/bwt/../../FASTASequence.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ../common/datastructures/suffixarray/SuffixArray.h \
+ ../common/datastructures/suffixarray/SharedSuffixArray.h \
+ ../common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ../common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ../common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ../common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ../common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ../common/datastructures/suffixarray/../../FASTASequence.h
+bin/PrintBWTSWBWT.o: PrintBWTSWBWT.cpp ..//common/NucConversion.h
+bin/PrintPBBWT.o: PrintPBBWT.cpp ..//common/datastructures/bwt/BWT.h \
+ ..//common/datastructures/bwt/Occ.h \
+ ..//common/datastructures/bwt/../../DNASequence.h \
+ ..//common/datastructures/bwt/../../NucConversion.h \
+ ..//common/datastructures/bwt/../../Types.h \
+ ..//common/datastructures/bwt/../../NucConversion.h \
+ ..//common/datastructures/bwt/../../utils.h \
+ ..//common/datastructures/bwt/../matrix/Matrix.h \
+ ..//common/datastructures/bwt/../matrix/../../Types.h \
+ ..//common/datastructures/bwt/../matrix/FlatMatrix.h ..//common/Types.h \
+ ..//common/datastructures/bwt/Pos.h \
+ ..//common/datastructures/bwt/PackedHash.h \
+ ..//common/datastructures/bwt/../../Types.h \
+ ..//common/datastructures/bwt/../../utils/BitUtils.h \
+ ..//common/datastructures/bwt/../../utils/../Types.h \
+ ..//common/datastructures/bwt/../../datastructures/suffixarray/SuffixArray.h \
+ ..//common/datastructures/bwt/../../datastructures/suffixarray/LCPTable.h \
+ ..//common/defs.h ..//common/tuples/DNATuple.h \
+ ..//common/tuples/TupleList.h ..//common/tuples/../Types.h \
+ ..//common/tuples/TupleMetrics.h ..//common/tuples/TupleMask.h \
+ ..//common/tuples/BaseTuple.h ..//common/tuples/TupleOperations.h \
+ ..//common/DNASequence.h ..//common/SeqUtils.h ..//common/utils.h \
+ ..//common/DNASequence.h ..//common/NucConversion.h \
+ ..//common/NucConversion.h ..//common/tuples/CompressedDNATuple.h \
+ ..//common/tuples/DNATuple.h \
+ ..//common/tuples/../cmpseq/CompressedSequence.h \
+ ..//common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ..//common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ..//common/tuples/../cmpseq/../qvs/../defs.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/MD5Utils.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/../Types.h \
+ ..//common/tuples/../cmpseq/../FASTASequence.h \
+ ..//common/tuples/../cmpseq/../Enumerations.h \
+ ..//common/tuples/../cmpseq/../DNASequence.h \
+ ..//common/tuples/../cmpseq/../datastructures/reads/ZMWGroupEntry.h \
+ ..//common/tuples/../cmpseq/../data/hdf/PlatformId.h \
+ ..//common/tuples/../cmpseq/../utils.h \
+ ..//common/algorithms/compare/CompareStrings.h \
+ ..//common/algorithms/sorting/qsufsort.h \
+ ..//common/algorithms/sorting/LightweightSuffixArray.h \
+ ..//common/algorithms/sorting/qsufsort.h \
+ ..//common/algorithms/sorting/MultikeyQuicksort.h \
+ ..//common/algorithms/sorting/../../NucConversion.h \
+ ..//common/algorithms/sorting/../../FASTASequence.h \
+ ..//common/algorithms/sorting/../../Types.h \
+ ..//common/algorithms/sorting/DifferenceCovers.h \
+ ..//common/qvs/QualityValue.h ..//common/utils/ProtectedNew.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/PackedDNASequence.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../DNASequence.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../NucConversion.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../utils/BitUtils.h \
+ ..//common/datastructures/bwt/../../FASTASequence.h
+bin/SuffixArrayToBWT.o: SuffixArrayToBWT.cpp ..//common/FASTASequence.h \
+ ..//common/Enumerations.h ..//common/DNASequence.h \
+ ..//common/NucConversion.h ..//common/Types.h \
+ ..//common/datastructures/reads/ZMWGroupEntry.h \
+ ..//common/data/hdf/PlatformId.h ..//common/FASTAReader.h \
+ ..//common/datastructures/metagenome/SequenceIndexDatabase.h \
+ ..//common/Types.h ..//common/DNASequence.h \
+ ..//common/utils/StringUtils.h ..//common/utils/MD5Utils.h \
+ ..//common/utils/../Types.h ..//common/FASTASequence.h \
+ ..//common/datastructures/suffixarray/SuffixArrayTypes.h \
+ ..//common/datastructures/suffixarray/SuffixArray.h \
+ ..//common/datastructures/suffixarray/LCPTable.h ..//common/defs.h \
+ ..//common/tuples/DNATuple.h ..//common/tuples/TupleList.h \
+ ..//common/tuples/../Types.h ..//common/tuples/TupleMetrics.h \
+ ..//common/tuples/TupleMask.h ..//common/tuples/BaseTuple.h \
+ ..//common/tuples/TupleOperations.h ..//common/SeqUtils.h \
+ ..//common/utils.h ..//common/NucConversion.h \
+ ..//common/tuples/CompressedDNATuple.h ..//common/tuples/DNATuple.h \
+ ..//common/tuples/../cmpseq/CompressedSequence.h \
+ ..//common/tuples/../cmpseq/ReverseCompressIndex.h \
+ ..//common/tuples/../cmpseq/../qvs/QualityValue.h \
+ ..//common/tuples/../cmpseq/../qvs/../defs.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/ChangeListID.h \
+ ..//common/tuples/../cmpseq/../qvs/../utils/StringUtils.h \
+ ..//common/tuples/../cmpseq/../FASTASequence.h \
+ ..//common/tuples/../cmpseq/../utils.h \
+ ..//common/algorithms/compare/CompareStrings.h \
+ ..//common/algorithms/sorting/qsufsort.h \
+ ..//common/algorithms/sorting/LightweightSuffixArray.h \
+ ..//common/algorithms/sorting/qsufsort.h \
+ ..//common/algorithms/sorting/MultikeyQuicksort.h \
+ ..//common/algorithms/sorting/../../NucConversion.h \
+ ..//common/algorithms/sorting/../../FASTASequence.h \
+ ..//common/algorithms/sorting/../../Types.h \
+ ..//common/algorithms/sorting/DifferenceCovers.h \
+ ..//common/qvs/QualityValue.h ..//common/utils/ProtectedNew.h \
+ ..//common/datastructures/suffixarray/SharedSuffixArray.h \
+ ..//common/datastructures/suffixarray/../../ipc/SharedMemoryAllocator.h \
+ ..//common/datastructures/suffixarray/../../tuples/DNATuple.h \
+ ..//common/datastructures/suffixarray/../../tuples/CompressedDNATuple.h \
+ ..//common/datastructures/suffixarray/../../algorithms/compare/CompareStrings.h \
+ ..//common/datastructures/suffixarray/../../cmpseq/CompressedSequence.h \
+ ..//common/datastructures/suffixarray/../../algorithms/compare/Compare4BitCompressed.h \
+ ..//common/datastructures/suffixarray/../../algorithms/compare/../../defs.h \
+ ..//common/datastructures/suffixarray/../../FASTASequence.h \
+ ..//common/datastructures/suffixarray/SuffixArray.h \
+ ..//common/datastructures/bwt/BWT.h ..//common/datastructures/bwt/Occ.h \
+ ..//common/datastructures/bwt/../../DNASequence.h \
+ ..//common/datastructures/bwt/../../NucConversion.h \
+ ..//common/datastructures/bwt/../../utils.h \
+ ..//common/datastructures/bwt/../matrix/Matrix.h \
+ ..//common/datastructures/bwt/../matrix/../../Types.h \
+ ..//common/datastructures/bwt/../matrix/FlatMatrix.h \
+ ..//common/datastructures/bwt/Pos.h \
+ ..//common/datastructures/bwt/PackedHash.h \
+ ..//common/datastructures/bwt/../../Types.h \
+ ..//common/datastructures/bwt/../../utils/BitUtils.h \
+ ..//common/datastructures/bwt/../../utils/../Types.h \
+ ..//common/datastructures/bwt/../../datastructures/suffixarray/SuffixArray.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/PackedDNASequence.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../DNASequence.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../NucConversion.h \
+ ..//common/datastructures/bwt/../../datastructures/sequence/../../utils/BitUtils.h \
+ ..//common/datastructures/bwt/../../FASTASequence.h
