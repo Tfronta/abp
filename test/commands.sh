@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# this one is the one you want to use SUDIPTO, first it creates a fakevcf from the matrix file
+# and then the next two scripts do the actual CC
 mkdir -p withFakeVCF
 cd withFakeVCF
 
@@ -9,8 +11,9 @@ cd withFakeVCF
 
 ../../MinDisagreeCluster.py --graph mi.gml --cuts mi.gml.cuts --sites mi.gml.sites --factor 2 --out mi.cuts.gml --swap 1000
 
-
 cd ..
+
+# these commands are just to make sure the fake vcf gives similar results to the real vcf 
 mkdir -p original
 cd original
 
@@ -19,10 +22,11 @@ cd original
 ../../MinDisagreeCluster.py --graph mi.gml --cuts mi.gml.cuts --sites mi.gml.sites --factor 2 --out mi.cuts.gml --swap 1000
 
 
-
-
-
 cd ..
+
+
+# cating the results 
+echo ""
 echo "original"
 cat original/mi.gml.cuts
 echo "fake vcf"
