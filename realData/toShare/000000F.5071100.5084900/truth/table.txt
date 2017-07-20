@@ -1,0 +1,7 @@
+Finished mapping 2 (155550 bp)
+
+
+57
+0	269   0
+
+Not running the clustering check

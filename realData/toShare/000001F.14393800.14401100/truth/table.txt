@@ -1,0 +1,10 @@
+Finished mapping 9 (366896 bp)
+
+
+2477
+0	  0   0   0   6   0   0   0   0   0
+1	  0   0   0   0   0   0   0   0   0
+2	  0   0   0   0   0   0   0   0   0
+3	  0   0   0   0   0   0   0   0   0
+
+Not running the clustering check

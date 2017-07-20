@@ -1,0 +1,10 @@
+##fileformat=VCFv4.1
+##INFO=<ID=AO,Number=A,Type=Integer,Description="Alternate allele observations">
+##INFO=<ID=RO,Number=1,Type=Integer,Description="Reference allele observations">
+##contig=<ID=000130F,length=81568>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	sample
+000130F	35345	snp380	C	T	.	PASS	AN=2;AO=NA;RO=NA;AL=NA	GT:GQ	0|1:100
+000130F	35905	snp398	T	C	.	PASS	AN=2;AO=NA;RO=NA;AL=NA	GT:GQ	0|1:100
+000130F	36263	snp412	A	T	.	PASS	AN=2;AO=NA;RO=NA;AL=NA	GT:GQ	0|1:100
+000130F	36546	snp425	G	A	.	PASS	AN=2;AO=NA;RO=NA;AL=NA	GT:GQ	0|1:100
+000130F	36747	snp433	T	A	.	PASS	AN=2;AO=NA;RO=NA;AL=NA	GT:GQ	0|1:100

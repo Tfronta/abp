@@ -1,0 +1,3 @@
+Group	nComps
+0	208
+1	5
